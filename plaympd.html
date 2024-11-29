@@ -34,6 +34,10 @@
         .shaka-spinner-container {
             transform: scale(0.8); /* Ukuran ikon play dan spinner sama */
         }
+
+        .shaka-video-container .material-icons-round {
+            color: #f1ff00;
+        }
     </style>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
@@ -199,6 +203,22 @@
                     lockOrientationToLandscape();
                 }
             });
+
+            // Konfigurasi warna seekBar menggunakan UI config
+            ui.configure({
+                seekBarColors: {
+                    base: 'rgba(255, 0, 0, 0.3)', // Warna latar belakang merah transparan
+                    buffered: 'rgba(255, 0, 0, 0.5)', // Warna buffer merah sedikit transparan
+                    played: 'red', // Warna bagian yang dimainkan
+                    adBreaks: 'yellow', // Warna untuk jeda iklan
+                }
+            });
+
+            // Ganti ikon menu dengan ikon gear
+            const menuButton = document.querySelector('.shaka-overflow-menu-button');
+            if (menuButton) {
+                menuButton.innerHTML = '<i class="fas fa-cog"></i>'; // Ikon gear dari Font Awesome
+            }
         }
 
         function onPlayerErrorEvent(errorEvent) { 
