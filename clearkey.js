@@ -512,7 +512,7 @@ function decode(encoded) {
                     lockOrientationToLandscape();
                 }
             });
- 
+
             // Konfigurasi warna seekBar menggunakan UI config
             ui.configure({
                 seekBarColors: {
