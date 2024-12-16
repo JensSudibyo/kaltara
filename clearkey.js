@@ -5,13 +5,9 @@ function decode(encoded) {
 
 		// Channel data - add more channels if needed
 		const channels = {
-		  'ar1': { 
-			url: decode('aHR0cHM6Ly93ZWJ0dnN0cmVhbS5iaHRlbGVjb20uYmEvaGxzNi9hcmVuYTEubXBk'), 
-			drm: { 'YzE4YjZhYTczOWJlNGMwYjc3NDYwNWZjZmI1ZDZiNjg=': decode('ZTQxYzNhNmY3NTMyYjJlM2E4MjhkOTU4MDEyNGM4OWQ=') }
-		  },
-		  'ar2': { 
-			url: decode('aHR0cHM6Ly93ZWJ0dnN0cmVhbS5iaHRlbGVjb20uYmEvaGxzNi9hcmVuYTIubXBk'), 
-			drm: { 'YzE4YjZhYTczOWJlNGMwYjc3NDYwNWZjZmI1ZDZiNjg=': decode('ZTQxYzNhNmY3NTMyYjJlM2E4MjhkOTU4MDEyNGM4OWQ=') }
+		  'ad1': { 
+			url: decode('aHR0cHM6Ly91c2VsZWN0b3IuY2RuLmludGlncmFsLW90dC5uZXQvQURTUDEvQURTUDEuaXNtbC9tYW5pZmVzdC5tcGQ='), 
+			drm: { 'ZWI1YTNhNDhmM2UxOTFhMDBlM2FjMWUyZDQ3MGM0OTE=': decode('MmM4YjcxOTg1NjM1MjdlNTI0ZDY2NjI4YzA5MmVmMWY=') }
 		  },
 		  'vsport': { 
 			url: decode('aHR0cHM6Ly9jb3JzLXByb3h5LmNvb2tzLmZ5aS9odHRwczovL2RpcmVjdG9yLnN0cmVhbWluZy50ZWxpYS5jb20vdHZtLXBhY2thZ2VyLXByb2QvZ3JvdXAxLzYwODk2YzM2NDdhMjNkN2YxMTVjZDU3YS9tYW5pZmVzdC5tcGQ='),
