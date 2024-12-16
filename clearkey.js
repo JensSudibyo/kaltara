@@ -6,8 +6,8 @@ function decode(encoded) {
 const channels = {
     'ad1': {
         url: decode('aHR0cHM6Ly91c2VsZWN0b3IuY2RuLmludGlncmFsLW90dC5uZXQvQURTUDEvQURTUDEuaXNtbC9tYW5pZmVzdC5tcGQ='),
-        drm: { 
-            'ZWI1YTNhNDhmM2UxOTFhMDBlM2FjMWUyZDQ3MGM0OTE=': decode('MmM4YjcxOTg1NjM1MjdlNTI0ZDY2NjI4YzA5MmVmMWY=') 
+        drm: {
+            [decode('ZWJ1YTNhNDhmM2UxOTFhMDBlM2FjMWUyZDQ3MGM0OTE=')]: decode('MmM4YjcxOTg1NjM1MjdlNTI0ZDY2NjI4YzA5MmVmMWY=')
         }
     },
     'vsport': {
