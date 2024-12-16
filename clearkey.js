@@ -361,51 +361,51 @@ function decode(encoded) {
 			url: decode('aHR0cHM6Ly9saXZlMDNwLXNlZy5tc2YuY2RuLm1lZGlhc2V0Lm5ldC9saXZlL2NoLXUyL3UyLWRhc2gtd2lkZXZpbmUuaXNtbC9tYW5pZmVzdC5tcGQ='), 
 			drm: { [decode('MDBmOWYzYzA3ODM1MzZiODM0YjBmMGMyYmZlZTgwYWM=')]: decode('NzZiM2FmYmYxNjNmOWMzZmViNjIwNGI4ZmNmMGZmNTM=') }
 		  },
-          'infinity3': { 
+          	  'infinity3': { 
 			url: decode('aHR0cHM6Ly9saXZlMDNwLXNlZy5tc2YuY2RuLm1lZGlhc2V0Lm5ldC9saXZlL2NoLXUzL3UzLWRhc2gtd2lkZXZpbmUuaXNtbC9tYW5pZmVzdC5tcGQ='), 
 			drm: { [decode('MDBmOWYzYzA3ODM1MzZiODM0MmQ3OGQ0NmM4YzIwMmE=')]: decode('OGQyZTk1MzgyMWQzNmM5NDIxNjFiZTA5OTMwZDJiZDQ=') }
 		  },
-          'infinity4': { 
+          	  'infinity4': { 
 			url: decode('aHR0cHM6Ly9saXZlMDNwLXNlZy5tc2YuY2RuLm1lZGlhc2V0Lm5ldC9saXZlL2NoLXU0L3U0LWRhc2gtd2lkZXZpbmUuaXNtbC9tYW5pZmVzdC5tcGQ='), 
 			drm: { [decode('MDBmOWYzYzA3ODM1MzZiODM0MzU3ODY0YmMyYWUwYTg=')]: decode('YWU3YmVjNjZlNGFjMjNmM2QyNDNmYTZlNGQ3NjdhMDA=') }
 		  },
-          'infinity5': { 
+          	  'infinity5': { 
 			url: decode('aHR0cHM6Ly9saXZlMDNwLXNlZy5tc2YuY2RuLm1lZGlhc2V0Lm5ldC9saXZlL2NoLXU1L3U1LWRhc2gtd2lkZXZpbmUuaXNtbC9tYW5pZmVzdC5tcGQ='), 
 			drm: { [decode('MDBmOWYzYzA3ODM1MzZiODM0YjI3ODc2MGM1YmEwMjY=')]: decode('YTlhYjUxYTllMDIxZGExNzdmOTgyZGU5YjQyZWIwZGU=') }
 		  },
-          'infinity6': { 
+          	  'infinity6': { 
 			url: decode('aHR0cHM6Ly9saXZlMDNwLXNlZy5tc2YuY2RuLm1lZGlhc2V0Lm5ldC9saXZlL2NoLXU2L3U2LWRhc2gtd2lkZXZpbmUuaXNtbC9tYW5pZmVzdC5tcGQ='), 
 			drm: { [decode('MDBmOWYzYzA3ODM1MzZiODM0YmE3ODg4YjlmOTYwYTQ=')]: decode('ODUyZWJlNTQ0NmNhYThmYWQ5OWM0NDBiODZhZDEyOGM=') }
 		  },
-          'skynz1': { 
+          	  'skynz1': { 
 			url: decode('aHR0cHM6Ly9saW5lYXItcy5tZWRpYS5za3lvbmUuY28ubnovc2t5LXNwb3J0LTEubXBk'), 
 			drm: { [decode('OTZiZTVjYTIxZjA4N2M4Y2IxZDc2MzA0NTdlMjAwMDA=')]: decode('NTNjYjQ5NTg2NGE0NDJmNGI3ZTdkZjhiNTQwZTAzNWQ=') }
 		  },
-          'skynz2': { 
+          	  'skynz2': { 
 			url: decode('aHR0cHM6Ly9saW5lYXItcy5tZWRpYS5za3lvbmUuY28ubnovc2t5LXNwb3J0LTIubXBk'), 
 			drm: { [decode('ZWY5MDlhY2NlMWY1M2Y1ZGIyYTFjZGFmZDJlOTAwMDA=')]: decode('YWJhMTI2OWQ2ODVmNDc0ZmJkZGY5N2NlMmI0NWM3MjU=') }
 		  },	
-          'skynz3': { 
+          	  'skynz3': { 
 			url: decode('aHR0cHM6Ly9saW5lYXItcy5tZWRpYS5za3lvbmUuY28ubnovc2t5LXNwb3J0LTMubXBk'), 
 			drm: { [decode('Nzk1NTNkZTM0MzIxZjExOTcyYTcyYjFlMzQ2MjAwMDA=')]: decode('NmYxMzRiMTBmZWQzNDVjOGJlMjlhYjRiMzE4Y2U1MDI=') }
 		  },	
-          'skynz5': { 
+          	  'skynz5': { 
 			url: decode('aHR0cHM6Ly9saW5lYXItcy5tZWRpYS5za3lvbmUuY28ubnovc2t5LXNwb3J0LTUubXBk'), 
 			drm: { [decode('NTQ5MjAzM2FjMmRjMTExNDFjZDVjMWQxZDdhODAwMDA=')]: decode('ZWQ4MjE5YjcwNjQ4NDlkMzg1ZDI2MTUxYzkwYmQzMDY=') }
 		  },
-          'skynz6': { 
+          	  'skynz6': { 
 			url: decode('aHR0cHM6Ly9saW5lYXItcy5tZWRpYS5za3lvbmUuY28ubnovc2t5LXNwb3J0LTYubXBk'), 
 			drm: { [decode('YTFjMzZhZTQ4M2I0NGZjNzgwMjVmYWUxMDEwMzAwMDA=')]: decode('ZTRlYTBhZGI2NjAxMzkzMDlhYjA2MGNmZWQxYTlkM2E=') }
 		  },				  
-          'skynz7': { 
+          	  'skynz7': { 
 			url: decode('aHR0cHM6Ly9saW5lYXItcy5tZWRpYS5za3lvbmUuY28ubnovc2t5LXNwb3J0LTcubXBk'), 
 			drm: { [decode('ZTJmY2I0MTM5MTQ5NDg2ZmFjYmZhMzE5MmFlMDAwMDA=')]: decode('ZjcyY2ZhM2EyYzFiMWY1NTc1NDIxZTgzNWNhMmE1OWI=') }
 		  },		  
-          'skynz8': { 
+          	  'skynz8': { 
 			url: decode('aHR0cHM6Ly9saW5lYXItcy5tZWRpYS5za3lvbmUuY28ubnovc2t5LXNwb3J0LTgubXBk'), 
 			drm: { [decode('Yzg5OTdmNTNiNzQ5NDA3MmJkYzVjOGQxYzVmMzAwMDA=')]: decode('YmRlM2QxMDU0ZWVhMDAxZDA2OTNiYjg0NmUxMjRlNzU=') }
 		  },
-          'skynz9': { 
+          	  'skynz9': { 
 			url: decode('aHR0cHM6Ly9saW5lYXItcy5tZWRpYS5za3lvbmUuY28ubnovc2t5LXNwb3J0LTkubXBk'), 
 			drm: { [decode('YWMzNjE1NDMxY2NiNGExNGFlZGM3NWRiZWE3YzAwMDA=')]: decode('YjUwYWU5ZWJkNzI3NGM5MDI0NDk4OWZlZDgwNjFlN2I=') }
 		  },
@@ -467,29 +467,52 @@ function decode(encoded) {
 		  }
 		};
 
-        let player;
-
-        async function init() {
-            const video = document.getElementById('video');
-            const ui = video['ui'];
-            const controls = ui.getControls();
-            player = controls.getPlayer();
-
-            populateChannelList();
+        async function init() { 
+            const video = document.getElementById('video'); 
+            const ui = video['ui']; 
+            const controls = ui.getControls(); 
+            const player = controls.getPlayer(); 
+            window.player = player; 
+            window.ui = ui; 
+            player.addEventListener('error', onPlayerErrorEvent); 
+            controls.addEventListener('error', onUIErrorEvent); 
 
             const urlParams = new URLSearchParams(window.location.search);
-            const key = urlParams.get('channel') || 'ar1';
-            await loadChannel(key);
+            const key = urlParams.get('channel');
+            if (channels[key]) {
+                const channel = channels[key];
+                if (channel.drm.clearkey) {
+                    player.configure({
+                        drm: {
+                            clearKeys: {
+                                [channel.drm.clearkey.keyId]: channel.drm.clearkey.key
+                            }
+                        }
+                    });
+                } else {
+                    player.configure({
+                        drm: {
+                            clearKeys: channel.drm
+                        }
+                    });
+                }
+                try {
+                    await player.load(channel.url); 
+                    console.log('The video has now been loaded!');
+                } catch (error) {
+                    onPlayerError(error);
+                }
+            } else {
+                console.error('Channel not found');
+            }
 
-            setupOverlayBehavior();
-
-            // Tambahkan lock orientation saat fullscreen
+            // Menambahkan listener untuk fullscreen
             controls.addEventListener('fullscreen', () => {
                 if (document.fullscreenElement) {
                     lockOrientationToLandscape();
                 }
             });
-
+ 
             // Konfigurasi warna seekBar menggunakan UI config
             ui.configure({
                 seekBarColors: {
@@ -507,58 +530,20 @@ function decode(encoded) {
             }
         }
 
-        function populateChannelList() {
-            const channelList = document.getElementById('channel-list');
-            Object.keys(channels).forEach(key => {
-                const li = document.createElement('li');
-                li.textContent = key;
-                li.addEventListener('click', () => {
-                    updateURLParameter('channel', key);
-                    loadChannel(key);
-                });
-                channelList.appendChild(li);
-            });
+        function onPlayerErrorEvent(errorEvent) { 
+            onPlayerError(event.detail);
         }
 
-        async function loadChannel(key) {
-            if (!channels[key]) {
-                console.error('Channel not found:', key);
-                return;
-            }
-            const channel = channels[key];
-            try {
-                if (channel.drm) {
-                    player.configure({
-                        drm: {
-                            clearKeys: channel.drm
-                        }
-                    });
-                }
-                await player.load(channel.url);
-                console.log(`Channel ${key} loaded successfully.`);
-            } catch (error) {
-                console.error('Failed to load channel:', error);
-            }
+        function onPlayerError(error) {
+            console.error('Error code', error.code, 'object', error);
         }
 
-        function updateURLParameter(param, value) {
-            const url = new URL(window.location.href);
-            url.searchParams.set(param, value);
-            window.history.pushState({}, '', url); // Update the URL without reloading
+        function onUIErrorEvent(errorEvent) { 
+            onPlayerError(event.detail);
         }
 
-        function setupOverlayBehavior() {
-            const overlay = document.getElementById('channel-overlay');
-
-            document.addEventListener('mousemove', (event) => {
-                const elementUnderCursor = document.elementFromPoint(event.clientX, event.clientY);
-                // Show overlay if mouse is near the right side or hovering over the overlay
-                if (window.innerWidth - event.clientX < 50 || overlay.contains(elementUnderCursor)) {
-                    overlay.classList.add('visible');
-                } else {
-                    overlay.classList.remove('visible');
-                }
-            });
+        function initFailed(errorEvent) {
+            console.error('Unable to load the UI library!');
         }
 
         function lockOrientationToLandscape() {
@@ -569,4 +554,5 @@ function decode(encoded) {
             }
         }
 
-        document.addEventListener('shaka-ui-loaded', init);
+        document.addEventListener('shaka-ui-loaded', init); 
+        document.addEventListener('shaka-ui-load-failed', initFailed); 
