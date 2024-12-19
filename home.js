@@ -540,23 +540,6 @@ function setupEvents() {
         sessionStorage.setItem(`activeServerUrl_${eventId}`, url);
     }
 
-    // Fungsi untuk switch content
-    function switchContent(target) {
-        document.querySelectorAll('.sidebar-content').forEach(function(content) {
-            content.classList.remove('active'); // hide all content
-        });
-        var targetContent = document.getElementById(target);
-        targetContent.classList.add('active'); // show target content
-
-        // Lazy load chat iframe
-        if (target === 'chat') {
-            var chatIframe = targetContent.querySelector('.chat-iframe');
-            if (chatIframe && !chatIframe.src) {
-                chatIframe.src = chatIframe.getAttribute('data-src');
-            }
-        }
-    }
-
     function refreshVideoPlayer() {
         var videoIframe = document.getElementById('video-iframe');
         if (videoIframe) {
