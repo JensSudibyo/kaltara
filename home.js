@@ -14,14 +14,25 @@ function setupEvents() {
         var id = container.getAttribute('data-id');
         validEventIds.push(id);
 
+        // Event time (match-date and match-time)
         var matchDate = container.querySelector('.match-date').textContent.trim();
         var matchTime = container.querySelector('.match-time').textContent.trim();
         var eventTime = parseEventDateTime(matchDate, matchTime);
+
+        // Kickoff event time (kickoff-match-date and kickoff-match-time)
+        var kickoffDate = container.querySelector('.kickoff-match-date').textContent.trim();
+        var kickoffTime = container.querySelector('.kickoff-match-time').textContent.trim();
+        var kickoffEventTime = parseEventDateTime(kickoffDate, kickoffTime);
+
         var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
         var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
 
-        updateMatchTimes(container, eventTime);
-        checkLiveStatus(container, eventTime, eventDurationMilliseconds); // Check live status when setting up events
+        // Update match times for both eventTime and kickoffEventTime
+        updateMatchTimes(container, eventTime); // Original event time
+        updateMatchTimes(container, kickoffEventTime); // Kickoff time adjustment
+
+        // Check live status using eventTime
+        checkLiveStatus(container, eventTime, eventDurationMilliseconds);
 
         // Check stored event status
         var storedStatus = sessionStorage.getItem(`eventStatus_${id}`);
@@ -39,9 +50,8 @@ function setupEvents() {
         buttonsContainer.innerHTML = ''; // Clear existing buttons
 
         servers.forEach(function(server, index) {
-            // Filter out mobile-only servers if not on a mobile device
             if (server.label.includes("Mobile") && !isMobileDevice()) {
-                return; // Skip adding this server button if it's mobile-only and not on a mobile device
+                return;
             }
 
             var button = document.createElement('div');
@@ -49,13 +59,13 @@ function setupEvents() {
             button.textContent = server.label;
             button.setAttribute('data-url', server.url);
             button.addEventListener('click', function(event) {
-                event.stopPropagation(); // Prevent triggering the event container click
+                event.stopPropagation();
                 selectServerButton(button);
                 loadEventVideo(container, server.url);
             });
             buttonsContainer.appendChild(button);
 
-            if (index === 0) { // Set the first button as the default selected button
+            if (index === 0) {
                 button.classList.add('active');
             }
         });
@@ -150,30 +160,38 @@ function setupEvents() {
         intervals[id] = interval; // Store the interval in the intervals object
     }
 
-    function updateMatchTimes(container, eventStartTime) {
-        var matchDateElem = container.querySelector('.match-date');
-        var matchTimeElem = container.querySelector('.match-time');
+function updateMatchTimes(container, eventStartTime) {
+    var matchDateElem = container.querySelector('.match-date');
+    var matchTimeElem = container.querySelector('.match-time');
+    var kickoffDateElem = container.querySelector('.kickoff-match-date');
+    var kickoffTimeElem = container.querySelector('.kickoff-match-time');
 
-        if (!matchDateElem.hasAttribute('data-original-date')) {
-            matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
-            matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
-        }
-
-        var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
-        var visitorOffsetInMinutes = new Date().getTimezoneOffset();
-        var visitorOffsetInHours = visitorOffsetInMinutes / 60;
-        var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
-
-        var adjustedDate = localEventStartTime.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-        var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-
-        console.log(`Adjusted date for event: ${adjustedDate}`);
-        console.log(`Adjusted time for event: ${adjustedTime}`);
-
-        matchDateElem.textContent = adjustedDate;
-        matchTimeElem.textContent = adjustedTime;
+    if (!matchDateElem.hasAttribute('data-original-date')) {
+        matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
+        matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
     }
 
+    var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
+    var visitorOffsetInMinutes = new Date().getTimezoneOffset();
+    var visitorOffsetInHours = visitorOffsetInMinutes / 60;
+    var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
+
+    var adjustedDate = localEventStartTime.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+
+    console.log(`Adjusted date for event: ${adjustedDate}`);
+    console.log(`Adjusted time for event: ${adjustedTime}`);
+
+    // Update match date and time
+    matchDateElem.textContent = adjustedDate;
+    matchTimeElem.textContent = adjustedTime;
+
+    // Update kickoff date and time if available
+    if (kickoffDateElem && kickoffTimeElem) {
+        kickoffDateElem.textContent = adjustedDate;
+        kickoffTimeElem.textContent = adjustedTime;
+    }
+}
     function checkLiveStatus(container, eventStartTime, eventDurationMilliseconds) {
         var now = new Date();
         var liveLabel = container.querySelector('.live-label');
@@ -524,18 +542,4 @@ function setupEvents() {
         } else {
             serverButtonsContainer.style.display = 'none';
         }
-    }
-
-    function selectServerButton(button) {
-        // Menghapus class active dari semua tombol server
-        var buttons = document.querySelectorAll('.server-button');
-        buttons.forEach(function(btn) {
-            btn.classList.remove('active');
-        });
-        // Menambahkan class active pada tombol yang diklik
-        button.classList.add('active');
-        // Simpan URL dari tombol server yang aktif
-        var url = button.getAttribute('data-url');
-        var eventId = button.closest('.event-container').getAttribute('data-id');
-        sessionStorage.setItem(`activeServerUrl_${eventId}`, url);
     }
