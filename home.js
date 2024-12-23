@@ -543,35 +543,3 @@ function updateMatchTimes(container, eventStartTime) {
             serverButtonsContainer.style.display = 'none';
         }
     }
-    function selectServerButton(button) {
-        // Menghapus class active dari semua tombol server
-        var buttons = document.querySelectorAll('.server-button');
-        buttons.forEach(function(btn) {
-            btn.classList.remove('active');
-        });
-        // Menambahkan class active pada tombol yang diklik
-        button.classList.add('active');
-        // Simpan URL dari tombol server yang aktif
-        var url = button.getAttribute('data-url');
-        var eventId = button.closest('.event-container').getAttribute('data-id');
-        sessionStorage.setItem(`activeServerUrl_${eventId}`, url);
-    }
-    function startPeriodicEventCheck() {
-        setInterval(function() {
-            var now = new Date();
-            document.querySelectorAll('.event-container').forEach(function(container) {
-                var matchDate = container.querySelector('.match-date').getAttribute('data-original-date');
-                var matchTime = container.querySelector('.match-time').getAttribute('data-original-time');
-                var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
-                var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
-
-                var eventStartTime = parseEventDateTime(matchDate, matchTime);
-                var eventEndTime = new Date(eventStartTime.getTime() + eventDurationMilliseconds);
-
-                if (now >= eventEndTime) {
-                    var id = container.getAttribute('data-id');
-                    markEventAsEnded(id); // Sembunyikan event-container jika event berakhir
-                }
-            });
-        }, 60000); // Periksa setiap menit
-    }
