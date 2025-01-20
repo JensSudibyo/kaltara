@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Player M3U8</title>
+    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.6.0/dist/clappr.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@0.3.0/dist/level-selector.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #player {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .player-poster[data-poster] {
+            background-size: contain !important;
+            background-color: black !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="player"></div>
+    <script>
+        // WebSocket ke Worker
+        const socket = new WebSocket("https://kltraidfetch.elutuna.workers.dev/");
+
+        // State untuk data video
+        let videoSources = {};
+        let currentVideoFile;
+
+        // Ambil key dari URL
+        const videoKey = getQueryParameter('key');
+
+        // Saat WebSocket terhubung
+        socket.onopen = () => {
+            console.log("WebSocket terhubung.");
+        };
+
+        // Saat menerima pesan dari Worker
+        socket.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+
+            if (data.type === "init" || data.type === "update") {
+                videoSources = data.videoSources;
+
+                // Update video jika ada perubahan
+                if (videoSources[videoKey] && videoSources[videoKey] !== currentVideoFile) {
+                    console.log("Pembaruan URL M3U8 diterima:", videoSources[videoKey]);
+                    currentVideoFile = videoSources[videoKey];
+
+                    // Perbarui player dengan URL terbaru
+                    player.load({ source: currentVideoFile });
+                    player.play();
+                }
+            }
+        };
+
+        // Tangani error WebSocket
+        socket.onerror = (error) => {
+            console.error("WebSocket error:", error);
+        };
+
+        // Tangani koneksi terputus
+        socket.onclose = () => {
+            console.log("WebSocket terputus.");
+        };
+
+        // Fungsi untuk mendapatkan parameter dari URL
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Inisialisasi player Clappr
+        const playerElement = document.getElementById("player");
+        let player = new Clappr.Player({
+            source: currentVideoFile || "",
+            height: '100%',
+            width: '100%',
+            loop: false,
+            poster: 'https://www.streamkaltaraid.online/images/poster.png',
+            plugins: [LevelSelector],
+            mediacontrol: {
+                seekbar: '#014AFF',
+                buttons: '#FFF'
+            },
+            playback: {
+                hlsjsConfig: {
+                    startPosition: -1,
+                }
+            },
+            mimeType: "application/x-mpegURL"
+        });
+        player.attachTo(playerElement);
+
+        // Fungsi untuk mengubah orientasi ke landscape saat fullscreen
+        player.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape').catch(function(error) {
+                    console.error('Orientation lock failed:', error);
+                });
+            }
+        });
+
+        // Kembalikan orientasi saat keluar dari fullscreen
+        player.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
+            if (screen.orientation && screen.orientation.unlock) {
+                screen.orientation.unlock();
+            }
+        });
+
+        // Event handling untuk error
+        player.on(Clappr.Events.PLAYER_ERROR, function() {
+            console.error('Error occurred while playing the video. Retrying...');
+            setTimeout(function() {
+                player.load({ source: currentVideoFile });
+                player.play();
+            }, 5000); // Coba lagi setelah 5 detik
+        });
+    </script>
+</body>
+</html>
