@@ -33,19 +33,10 @@
             transform: translate(-50%, -50%);
         }
 
-        #refresh-button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #014AFF;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #refresh-button:hover {
-            background-color: #013AC7;
+        /* Menimpa gaya poster Clappr untuk menjaga proporsi */
+        .player-poster[data-poster] {
+            background-size: contain !important; /* Menjaga rasio aspek poster */
+            background-color: black !important; /* Warna latar belakang hitam */
         }
     </style>
 </head>
@@ -145,11 +136,8 @@
             const distance = eventTime.getTime() - now;
 
             if (distance <= 0) {
-                // Jika waktu acara tercapai, tampilkan pesan refresh dengan tombol
-                countdownElement.innerHTML = `
-                    Streaming is now available.<br>
-                    <button id="refresh-button" onclick="refreshPage()">Refresh Page</button>
-                `;
+                // Jika waktu acara tercapai, tampilkan pesan refresh
+				countdownElement.innerHTML = "Streaming is now available.<br>Please refresh the page!";
                 clearInterval(countdownInterval);
                 return;
             }
