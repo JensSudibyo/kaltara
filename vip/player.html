@@ -75,7 +75,7 @@
         const videoUrl = sources[videoKey];
 
         if (videoUrl) {
-			if (videoUrl.includes('.m3u8')) { 
+	     if (videoUrl.includes('.m3u8')) { 
                 // Tampilkan Clappr Player untuk M3U8
                 document.getElementById('player').classList.remove('hidden');
                 var player = new Clappr.Player({
