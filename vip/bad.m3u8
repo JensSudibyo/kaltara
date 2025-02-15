@@ -1,6 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3000000
-http://43.152.23.41/play.cbalive.weibisai.com/live/3825244486985061_AiSD.m3u8?txSecret=3a2ab8d69db2daeab0454dfa694b64f6&txTime=67B03B70
-http://43.152.23.41/play.cbalive.weibisai.com/live/3821813877335061_AiSD.m3u8?txSecret=0d17bd82242f8ca70a0d8383cb40d0f5&txTime=67B11C70
-#https://jiotvbpklive.cdn.jio.com/bpk-tv/IDCDemo_IPL23_Sports18_MOB/Fallback/IDCDemo_IPL23_Sports18_MOB-audio_98838_eng=98800-video=2293600-433371119.m3u8
+https://040a321a284e77b5bc3a69efbc34b942.v.smtcdns.net/203.205.136.11/play.cbalive.weibisai.com/live/3821813877335061_AiSD.m3u8?txSecret=0d17bd82242f8ca70a0d8383cb40d0f5&txTime=67B11C70
