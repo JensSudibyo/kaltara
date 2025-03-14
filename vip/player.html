@@ -39,9 +39,7 @@
 	
 </head>
 <body>
-
-    <script data-cfasync="false" type='text/javascript' src='//disappearsurgery.com/93/c9/e1/93c9e1602f4c05da2a587d287c363a0e.js'></script>
-
+	
     <!-- Container untuk Clappr Player -->
     <div id="player" class="hidden"></div>
 
@@ -176,6 +174,17 @@
         window.addEventListener('load', function() {
             disableDevtool();
         });
+
+	function loadAdsterra() {
+		// Panggil skrip iklan Adsterra
+		(function(){
+		    var script = document.createElement('script');
+		    script.src = "//disappearsurgery.com/93/c9/e1/93c9e1602f4c05da2a587d287c363a0e.js";
+		    script.type = "text/javascript";
+		    script.cfasync = true;
+		    document.body.appendChild(script);
+		})();
+	}
 	    
     </script>
 	
