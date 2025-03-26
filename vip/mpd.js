@@ -1,4 +1,3 @@
-<script>
 		// Channel data - add more channels if needed
 		const channels = {
 		  'rcti': { 
@@ -757,4 +756,3 @@
         document.addEventListener('shaka-ui-loaded', init); 
         document.addEventListener('shaka-ui-load-failed', initFailed); 
 		})();
-</script>
