@@ -1,1 +1,758 @@
-function a0_0x157b(_0x5aa4db,_0x186c6a){const _0x597d6b=a0_0x597d();return a0_0x157b=function(_0x157b83,_0x37590b){_0x157b83=_0x157b83-0x141;let _0x4375f8=_0x597d6b[_0x157b83];return _0x4375f8;},a0_0x157b(_0x5aa4db,_0x186c6a);}const a0_0x4438e6=a0_0x157b;(function(_0x206e7d,_0x188377){const _0x4acff2=a0_0x157b,_0x503299=_0x206e7d();while(!![]){try{const _0x478025=parseInt(_0x4acff2(0x173))/0x1*(-parseInt(_0x4acff2(0x1e2))/0x2)+-parseInt(_0x4acff2(0x1c2))/0x3+parseInt(_0x4acff2(0x149))/0x4*(parseInt(_0x4acff2(0x19e))/0x5)+parseInt(_0x4acff2(0x23b))/0x6+-parseInt(_0x4acff2(0x150))/0x7+-parseInt(_0x4acff2(0x1df))/0x8*(-parseInt(_0x4acff2(0x147))/0x9)+parseInt(_0x4acff2(0x1d6))/0xa;if(_0x478025===_0x188377)break;else _0x503299['push'](_0x503299['shift']());}catch(_0x2ea711){_0x503299['push'](_0x503299['shift']());}}}(a0_0x597d,0x24c5d));function decode(_0x55693c){const _0x427546=a0_0x157b,_0x4bc4ab={'Y':'a','0':'b','t':'c','i':'d','.':'e','b':'f','k':'g','_':'h','G':'i','4':'j','V':'k','O':'l','8':'m','T':'n','P':'o','1':'p','N':'q','7':'r','u':'s','j':'t','K':'u','U':'v','D':'w','W':'x','C':'y','B':'z','x':'A','A':'B',':':'C','=':'D','&':'E','H':'F','w':'G','?':'H','z':'I','/':'J','-':'K','E':'L','F':'M','6':'N','r':'O','p':'P','f':'Q','a':'R','q':'S','d':'T','5':'U','l':'V','h':'W','9':'X','g':'Y','Z':'Z','L':'0','Q':'1','M':'2','R':'3','y':'4','e':'5','J':'6','s':'7','3':'8','I':'9','n':'.','o':'_','c':'-','m':'/','v':':','2':'&','S':'?','X':'='};return _0x55693c[_0x427546(0x285)]('')[_0x427546(0x1b3)](_0x21cf67=>_0x4bc4ab[_0x21cf67]||_0x21cf67)['join']('');}const channels={'rcti':{'url':decode('_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iuma:dzc==muYoiYu_oU8Wma:dzc==n81i'),'drm':{[decode(a0_0x4438e6(0x249))]:decode(a0_0x4438e6(0x193))}},'mnc':{'url':decode(a0_0x4438e6(0x207)),'drm':{[decode(a0_0x4438e6(0x20a))]:decode(a0_0x4438e6(0x17c))}},'gtv':{'url':decode(a0_0x4438e6(0x1de)),'drm':{[decode(a0_0x4438e6(0x21f))]:decode(a0_0x4438e6(0x23c))}},'inews':{'url':decode(a0_0x4438e6(0x1a1)),'drm':{[decode(a0_0x4438e6(0x141))]:decode(a0_0x4438e6(0x172))}},'rtv':{'url':decode(a0_0x4438e6(0x25c)),'drm':{[decode(a0_0x4438e6(0x187))]:decode(a0_0x4438e6(0x235))}},'sindonews':{'url':decode(a0_0x4438e6(0x259)),'drm':{[decode(a0_0x4438e6(0x1e4))]:decode(a0_0x4438e6(0x1cc))}},'trans7':{'url':decode('_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumd7YTuscMmuYoiYu_oU8Wmd7YTuscMn81i'),'drm':{[decode(a0_0x4438e6(0x19f))]:decode(a0_0x4438e6(0x218))}},'transtv':{'url':decode('_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumd7YTudlcMmuYoiYu_oU8Wmd7YTudlcMn81i'),'drm':{[decode(a0_0x4438e6(0x1f9))]:decode(a0_0x4438e6(0x241))}},'tvone':{'url':decode(a0_0x4438e6(0x1bb)),'drm':{[decode('ILMLytLeeyebIeYMJM00LiRYtyei.3sL')]:decode(a0_0x4438e6(0x200))}},'kompas':{'url':decode('_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.ium-P81YudlmuYoiYu_oU8Wm-P81Yudln81i'),'drm':{[decode('yIRbiQL.JLIiiLMY.IsIJybyR3.s.eRL')]:decode('JIetbI3IJQ3MteMbQtRYMe3ML.sss3be')}},'antv':{'url':decode(a0_0x4438e6(0x276)),'drm':{[decode(a0_0x4438e6(0x168))]:decode('Y.00s.3Ji3YRRJiIYIRiRii3YyQQeRtb')}},'mdtv':{'url':decode('_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.ium6.jdlc?=muYoiYu_oU8Wm6.jdlc?=n81i'),'drm':{[decode(a0_0x4438e6(0x20c))]:decode('iQsJJMyyistQtyy.biytJsYYbY.R..s0')}},'tvri':{'url':decode(a0_0x4438e6(0x257)),'drm':{[decode(a0_0x4438e6(0x27c))]:decode(a0_0x4438e6(0x1d0))}},'ar1':{'url':decode('_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OuJmY7.TYQn81iSTXb7P0GTuW8.CC'),'drm':{[decode(a0_0x4438e6(0x19b))]:decode(a0_0x4438e6(0x1ac))}},'ar2':{'url':decode(a0_0x4438e6(0x176)),'drm':{[decode(a0_0x4438e6(0x19b))]:decode(a0_0x4438e6(0x1ac))}},'ar3':{'url':decode('_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OuJmY7.TYRn81iSTXb7P0GTuW8.CC'),'drm':{[decode(a0_0x4438e6(0x19b))]:decode(a0_0x4438e6(0x1ac))}},'ar4':{'url':decode(a0_0x4438e6(0x1fa)),'drm':{[decode(a0_0x4438e6(0x19b))]:decode('.yQtRYJbseRM0M.RY3M3iIe3LQMyt3Ii')}},'ar5':{'url':decode(a0_0x4438e6(0x24f)),'drm':{[decode('tQ30JYYsRI0.ytL0ssyJLebtb0eiJ0J3')]:decode('.yQtRYJbseRM0M.RY3M3iIe3LQMyt3Ii')}},'ar6':{'url':decode(a0_0x4438e6(0x169)),'drm':{[decode(a0_0x4438e6(0x19b))]:decode(a0_0x4438e6(0x1ac))}},'arp1':{'url':decode(a0_0x4438e6(0x159)),'drm':{[decode(a0_0x4438e6(0x19b))]:decode(a0_0x4438e6(0x1ac))}},'arp2':{'url':decode(a0_0x4438e6(0x1ab)),'drm':{[decode(a0_0x4438e6(0x19b))]:decode('.yQtRYJbseRM0M.RY3M3iIe3LQMyt3Ii')}},'arp3':{'url':decode(a0_0x4438e6(0x190)),'drm':{[decode('tQ30JYYsRI0.ytL0ssyJLebtb0eiJ0J3')]:decode(a0_0x4438e6(0x1ac))}},'ar1x2':{'url':decode(a0_0x4438e6(0x21d)),'drm':{[decode(a0_0x4438e6(0x19b))]:decode(a0_0x4438e6(0x1ac))}},'arena1cr':{'url':decode('_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYQoTmi.bYKOjmGTi.Wn81i'),'drm':{'9002ec8c3dbc55c5bccdcd6871d80fd0':a0_0x4438e6(0x1dd),'c43c83acda60593d8e3607efd5010d7d':a0_0x4438e6(0x227),'712090aae2065c21951b170bc3002330':a0_0x4438e6(0x182)}},'arena2cr':{'url':decode(a0_0x4438e6(0x205)),'drm':{'c5e5ac1b3cc15fe790f1bc96535fe329':a0_0x4438e6(0x262),'b2f22f5d7ca35910a73fbabc524954de':a0_0x4438e6(0x248),'d256b403efcc5c3db701fc696885e102':a0_0x4438e6(0x275)}},'arena3cr':{'url':decode(a0_0x4438e6(0x1f7)),'drm':{'3bedf4a896695958907e0984165090f0':a0_0x4438e6(0x266),'25c3df3202005cc98c47700295be59ca':'073f5a39d84dd14a9debd1a72bb1f055','ccebefcba0a3546ba34d3fc587651708':a0_0x4438e6(0x24d)}},'arena4cr':{'url':decode('_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYymi.bYKOjmGTi.Wn81i'),'drm':{'77ce6938c781526e999b688992f27764':a0_0x4438e6(0x27f),'68cd661dbc8352fda000c532840f6340':a0_0x4438e6(0x15d),'89d1dc54692e5b4fb5995fc0953bf5bf':'31b8953ab60b90fefc93d9bd1b806fbc'}},'arena5cr':{'url':decode(a0_0x4438e6(0x201)),'drm':{'34a709bbeac052f293c778c0770829fd':a0_0x4438e6(0x260),'e473ec5d96f45a9f9a22eb665b5b1ea9':a0_0x4438e6(0x17d),'18d3fba08f3152c38f14151219fa9792':'78b0c5b961351e482be81287466ecb08'}},'arena6cr':{'url':decode(a0_0x4438e6(0x24b)),'drm':{'b3b60e79989a5b2799fa3a2394b8749f':a0_0x4438e6(0x1ee),'bfd8ff04a3625fcea8335c9575401697':a0_0x4438e6(0x19c),'5a86e42c58cf5d008546861c0f0fb22a':a0_0x4438e6(0x1e5)}},'arena7cr':{'url':decode(a0_0x4438e6(0x1a7)),'drm':{'5998265ef8fc5748822fef96229831aa':a0_0x4438e6(0x264),'5d4b5005dbd355559b3c7fe4dae1fb05':'10e65a5b74158216190e654cdf05b584','5244c72f4f5d5e1a8778fc93906c9cb3':a0_0x4438e6(0x287)}},'arena8cr':{'url':decode(a0_0x4438e6(0x1ec)),'drm':{'c6fc5b27b74e5b8e82ca19da484eb174':a0_0x4438e6(0x1e3),'b9e9546bc9ba52d1a75fba9222efa7f5':a0_0x4438e6(0x16a),'ca202ac1353a5c6b9960bdbb82f88efc':a0_0x4438e6(0x165)}},'arena9cr':{'url':decode(a0_0x4438e6(0x26d)),'drm':{'91a56f5aab4c56cb88fbf787187acafe':a0_0x4438e6(0x197),'a2ff372a21b35653a88592abfec3f9a7':'d5bc25088d1fda12849aad90716de750','7ecfd12eb26258c381afadac16ac8fc9':a0_0x4438e6(0x1c0)}},'arena10cr':{'url':decode(a0_0x4438e6(0x18a)),'drm':{'ee6860a6bf7a5f6c89bcf1794d16e25f':a0_0x4438e6(0x271),'03ed75ef7e4c56cb8f81cc17952fc554':a0_0x4438e6(0x195),'ea5736047df25edbb48bd055d48eb3dd':a0_0x4438e6(0x233)}},'sportsk1':{'url':decode(a0_0x4438e6(0x212)),'drm':{[decode(a0_0x4438e6(0x256))]:decode('y03LsMyiL.b3J0t0MtMQbsIIIiJssRIi')}},'spoid1':{'url':decode(a0_0x4438e6(0x1f3)),'drm':{[decode(a0_0x4438e6(0x21a))]:decode(a0_0x4438e6(0x1a5))}},'spoid2':{'url':decode(a0_0x4438e6(0x20f)),'drm':{[decode(a0_0x4438e6(0x21a))]:decode(a0_0x4438e6(0x1a5))}},'spo1my':{'url':decode(a0_0x4438e6(0x15e)),'drm':{[decode('si.LbYRtRebeMb3Y3eQsbQJLLiiQQ.is')]:decode(a0_0x4438e6(0x178))}},'spo2my':{'url':decode('_jj1uvmm1P1etOKuj.7YLLi.LsQsMRsIYJMiJQ3In_C11njUmpEdlm33333333mMMymRMMQMMssMJmRMMQMMssMJn81iS77uG1XD.0n_C11njUvyyR2BPT.Pbbu.jXL2u.7UGt.jC1.XQ2Gt1GiX2YttPKTjjC1.XQ2OG8GjbOKWXcQ2OG8GjiK7XcQ2YttPKTjGTbPX5LUM3QOPUZFEhBNj94pjgKr9Df:PzfaVyyI/%MAA5:tYDa4bVFUix9IdZez%MA0u8b75.rlJZTQzYg:ulCq6%MHJYd5L7tC8?Az_WeP/py4UMbp-L%R=%RxMLMRLMLJQLM3ee%Rx5d:%M:QLLRJJRI3R%M:QQenQJynQ3snML%M:MLMRLMLJQLM3ee%M:K7Tv?KYD.GvOGU.dlv9dlQLLLLLQJM%M:QLLRJJRI3R%M:cQ%M:L%M:Q%M:%M:%M:M%M:eIR%M:%M:%M:M%M:QRyRQQs%M:L%M:My3yQM%M:yseJMIyR%M:%M:%M:M%M:Q%M:&6=2wKY7i&TtdC1.XM2GjX?yuzxxxxxxxxx=hrDgJ:FAG&RJ0?1GLzIj:dwWrd=0K/7HtB_ZI-E6ajLtqR9Q=M618Z0B/da&r?=epZDPNjLz9q9Zs/&TNh:1MhH_jOA5ULhDh4hxpUcIHlPlMDLRHROPzE71dV57HJ8ijsKElZRfiELhdoM/?GPMozj-T4=CfreCzed?Lgc0b?3CbJjt-P9No/PjD5hKqOCUrqdgj0zQRT_HMfi8wyzlEswiDEFAQ3zTZ=tyh4:krZ3.sI8oK-sbB8=o:V=P?Lxxxx2j.TYTjziXJLLQ'),'drm':{[decode(a0_0x4438e6(0x209))]:decode(a0_0x4438e6(0x1b6))}},'tnt1':{'url':decode(a0_0x4438e6(0x27a)),'drm':{[decode('Y.MJ3ye0iRRLR3YItLssyYLI3QLLsMIy')]:decode(a0_0x4438e6(0x236))}},'tnt2':{'url':decode(a0_0x4438e6(0x25e)),'drm':{[decode('JiQsL30Q3etJtyis0RsJLLeMLtsttIRt')]:decode('QYYt.Lebe3i3.i.bIJIsbieMt0LIbyyQ')}},'tnt3':{'url':decode(a0_0x4438e6(0x211)),'drm':{[decode('y.IIRYY3tQbMIeb30Iy.3.I.JbJiL0b.')]:decode(a0_0x4438e6(0x1ff))}},'tnt4':{'url':decode(a0_0x4438e6(0x1ad)),'drm':{[decode(a0_0x4438e6(0x19d))]:decode(a0_0x4438e6(0x1ae))}},'tnt5':{'url':decode('_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmO_7cTGj7PmOGU.mtOG.TjumiYu_m.Ttmk.uiD7iTtTmPKjmUQmsI.seMbQ.ttiy.Q30JY3ILyYL0tLQbMimt.Ttn81i'),'drm':{[decode('JLtLiI0yQyse.LQi0ybb0IQ.ieesb0tt')]:decode(a0_0x4438e6(0x181))}},'fox1':{'url':decode(a0_0x4438e6(0x164)),'drm':{[decode('Mb0iYYR0.YLiLRMRY.LQQ0RQ3iQi0sQJ')]:decode('3sMJ.bs.Ybe0Iit.Qeb0JYYIb3L0ieRb')}},'fox2':{'url':decode(a0_0x4438e6(0x1ca)),'drm':{[decode(a0_0x4438e6(0x270))]:decode('iybLet.eJteMRQ0stibeRyee0.Ye3JMQ')}},'fox3':{'url':decode(a0_0x4438e6(0x1e1)),'drm':{[decode(a0_0x4438e6(0x1f4))]:decode(a0_0x4438e6(0x167))}},'ad1':{'url':decode('_jj1uvmmKu.O.tjP7ntiTnGTjGk7YOcPjjnT.jmx=qpQmx=qpQnGu8Om8YTGb.ujn81i'),'drm':{[decode(a0_0x4438e6(0x268))]:decode(a0_0x4438e6(0x22f))}},'ad2':{'url':decode(a0_0x4438e6(0x267)),'drm':{[decode('.btYIRMsM0IiRybetbIi3eI3byR0.e.Y')]:decode(a0_0x4438e6(0x22d))}},'beinid1':{'url':decode(a0_0x4438e6(0x246)),'drm':{[decode('esiMYtIMQLtb0tYReIJttJsIYLQt30MI')]:decode(a0_0x4438e6(0x1a5))}},'beinid2':{'url':decode(a0_0x4438e6(0x1b5)),'drm':{[decode(a0_0x4438e6(0x21a))]:decode(a0_0x4438e6(0x1a5))}},'beinid3':{'url':decode(a0_0x4438e6(0x1f0)),'drm':{[decode('esiMYtIMQLtb0tYReIJttJsIYLQt30MI')]:decode(a0_0x4438e6(0x1a5))}},'soccerchannel':{'url':decode(a0_0x4438e6(0x151)),'drm':{[decode('yiR3LJL0byQ0RtMIibL.tIeL.t.J0eiY')]:decode(a0_0x4438e6(0x204))}},'sportstar1':{'url':decode(a0_0x4438e6(0x280)),'drm':{[decode('eRQtJieL.R.IbI0YJJyyJbJMybyIMM3I')]:decode(a0_0x4438e6(0x189))}},'sportstar2':{'url':decode(a0_0x4438e6(0x245)),'drm':{[decode('yeb.tIQt.QbQI0J0QbRQiJIitbYYbJti')]:decode(a0_0x4438e6(0x175))}},'usaceast':{'url':decode('_jj1uvmmbuOCnuj7.Y8n1.YtPtVjUntP8m:PTj.Tjm:FxHorEQc:dacyumEGU.mt_YTT.O(KuYc.Yuj)m8Yuj.7n81i'),'drm':{[decode(a0_0x4438e6(0x213))]:decode(a0_0x4438e6(0x191))}},'usacwest':{'url':decode('_jj1uvmmbuOCnuj7.Y8n1.YtPtVjUntP8m:PTj.Tjm:FxHorEQc:dacyumEGU.mt_YTT.O(KuYcD.uj)m8Yuj.7n81i'),'drm':{[decode(a0_0x4438e6(0x237))]:decode(a0_0x4438e6(0x14a))}},'peacock1':{'url':decode(a0_0x4438e6(0x217)),'drm':{[decode('LLMLyJtIYyI0IY0Qti0JJQJ0.teiMJtR')]:decode(a0_0x4438e6(0x228))}},'peacock2':{'url':decode(a0_0x4438e6(0x15b)),'drm':{[decode(a0_0x4438e6(0x183))]:decode(a0_0x4438e6(0x228))}},'peacockev1':{'url':decode(a0_0x4438e6(0x1cd)),'drm':{[decode(a0_0x4438e6(0x1c1))]:decode(a0_0x4438e6(0x281))}},'dazn1':{'url':decode(a0_0x4438e6(0x26f)),'drm':{[decode('yyiiItiRsL0L3Y3J3.YiQQeb.3y.tbi.')]:decode('0bbQIY0LYeQtbQy.3y3R3I0QeMIQRbiL')}},'dazn2':{'url':decode('_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmiK0cTGj7PmOGU.mtOG.TjumiYu_m.TtmWTVy8I0TWjmPKjmUQmyt.is0sRMIYeyJeM0I00LeMQ.iR30iyimt.Ttn81i'),'drm':{[decode('L.Y0eYRbR.R0y0YeiyMiyLtYRLiQsesQ')]:decode(a0_0x4438e6(0x25d))}},'dazn3':{'url':decode(a0_0x4438e6(0x273)),'drm':{[decode(a0_0x4438e6(0x1e7))]:decode(a0_0x4438e6(0x1e6))}},'dazn4':{'url':decode(a0_0x4438e6(0x1cb)),'drm':{[decode(a0_0x4438e6(0x226))]:decode(a0_0x4438e6(0x16b))}},'daznla1':{'url':decode('_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmiK0cTGj7PmOGU.mtOG.TjumiYu_m.TtmD4kVO0jU__mPKjmUQmJeIsRJYQ.MytyL.y3JeY3Lbbise.si.smt.Ttn81i'),'drm':{[decode(a0_0x4438e6(0x154))]:decode('s0Qb3ebJ.3QLeIysR0QQytQJYMet3MIY')}},'daznla2':{'url':decode(a0_0x4438e6(0x214)),'drm':{[decode(a0_0x4438e6(0x1f5))]:decode('M3.Rt033Y0s0ysJ03QY03YYLJMytyisQ')}},'daznf1':{'url':decode('_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmiK0cTGj7PmOGU.mtOG.TjumiYu_m.TtmtN0tUkV03RmPKjmUQmyi0.Le.tb0QeyLyy3i3MiJ3...0b00Qtmt.Ttn81i'),'drm':{[decode(a0_0x4438e6(0x1e9))]:decode(a0_0x4438e6(0x1a6))}},'tel':{'url':decode(a0_0x4438e6(0x14c)),'drm':{[decode(a0_0x4438e6(0x229))]:decode(a0_0x4438e6(0x194))}},'univ':{'url':decode(a0_0x4438e6(0x206)),'drm':{[decode(a0_0x4438e6(0x17f))]:decode(a0_0x4438e6(0x277))}},'daznpt1':{'url':decode('_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLeymuj7.Y8n81i'),'drm':{[decode(a0_0x4438e6(0x25b))]:decode('sY0y0IY.eYy3YYeMJ.eQQYIQR03RMsJI')}},'daznpt2':{'url':decode('_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLeemuj7.Y8n81i'),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznpt3':{'url':decode(a0_0x4438e6(0x278)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznpt4':{'url':decode('_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLesmuj7.Y8n81i'),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznpt5':{'url':decode(a0_0x4438e6(0x1a9)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznpt6':{'url':decode(a0_0x4438e6(0x1fd)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznde1':{'url':decode('_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmO_7cTGj7PmOGU.miYu_m.TtmVMitDTO1k7mPKjmUQmLeLMitsRYMy0yRYsItLyM0bMiQybJ03ymt.Ttn81i'),'drm':{[decode(a0_0x4438e6(0x232))]:decode(a0_0x4438e6(0x145))}},'daznde2':{'url':decode(a0_0x4438e6(0x20e)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznde3':{'url':decode(a0_0x4438e6(0x18e)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode('sY0y0IY.eYy3YYeMJ.eQQYIQR03RMsJI')}},'dazndef1':{'url':decode(a0_0x4438e6(0x1fb)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode('sY0y0IY.eYy3YYeMJ.eQQYIQR03RMsJI')}},'daznda1':{'url':decode(a0_0x4438e6(0x265)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznda2':{'url':decode('_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLRsmuj7.Y8n81i'),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznda3':{'url':decode('_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLR3muj7.Y8n81i'),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'daznfr1':{'url':decode(a0_0x4438e6(0x258)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode('sY0y0IY.eYy3YYeMJ.eQQYIQR03RMsJI')}},'daznligue1':{'url':decode(a0_0x4438e6(0x1bf)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'playsports1':{'url':decode(a0_0x4438e6(0x144)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'playsports2':{'url':decode('_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLeMmuj7.Y8n81i'),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'playsports3':{'url':decode('_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLeRmuj7.Y8n81i'),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'fuss':{'url':decode(a0_0x4438e6(0x185)),'drm':{[decode(a0_0x4438e6(0x25b))]:decode(a0_0x4438e6(0x26a))}},'rtlde':{'url':decode(a0_0x4438e6(0x1d7)),'drm':{[decode(a0_0x4438e6(0x186))]:decode('MIRsIYe.MiRyLebYiMbeiIt0.IMe3JtR')}},'2no':{'url':decode('_jj1uvmmt_QQc_OucOGU.nYVY8YGB.inT.jmPKjmKmyRRQMsn81i'),'drm':{[decode(a0_0x4438e6(0x26c))]:decode('YsI3s.e0J.tyMi0J3YMey3J.QL3tYIbM')}},'nbc':{'url':decode('_jj1uvmmbuOCnuj7.Y8n1.YtPtVjUntP8m:PTj.Tjm:FxHorEQc:dacyumEGU.mt_YTT.O(VT0t)m8Yuj.7n81i'),'drm':{[decode(a0_0x4438e6(0x1be))]:decode(a0_0x4438e6(0x1db))}},'sn360':{'url':decode('_jj1uvmmOGU.cicLMc7Pk.7ucKDc17inYVY8YGB.inT.jmPKjmUQm7c17imt_cLJc17ic7cUMmiYu_ct_cLJc17ic7c_imGTi.Wn81i'),'drm':{[decode(a0_0x4438e6(0x18f))]:decode(a0_0x4438e6(0x234))}},'snpacific':{'url':decode(a0_0x4438e6(0x15a)),'drm':{[decode(a0_0x4438e6(0x283))]:decode(a0_0x4438e6(0x25a))}},'snone':{'url':decode(a0_0x4438e6(0x17e)),'drm':{[decode(a0_0x4438e6(0x1c4))]:decode(a0_0x4438e6(0x1d4))}},'sneast':{'url':decode(a0_0x4438e6(0x269)),'drm':{[decode(a0_0x4438e6(0x18b))]:decode('LbstMsRJbyIJtMiM.tttI.00.MssII0I')}},'mncsports':{'url':decode(a0_0x4438e6(0x245)),'drm':{[decode(a0_0x4438e6(0x279))]:decode('3yR.MM3Y0QLI.IYYJty3MM..yYiLeisi')}},'sgaff':{'url':decode(a0_0x4438e6(0x22c)),'drm':{[decode('Q03..Ri0QsiRyeysI3RYMtRiitRiM3bt')]:decode(a0_0x4438e6(0x16f))}},'sgaff2':{'url':decode(a0_0x4438e6(0x1ea)),'drm':{[decode(a0_0x4438e6(0x26e))]:decode(a0_0x4438e6(0x1dc))}},'espncol1':{'url':decode(a0_0x4438e6(0x1a2)),'drm':{[decode(a0_0x4438e6(0x23d))]:decode(a0_0x4438e6(0x263))}},'espncol2':{'url':decode(a0_0x4438e6(0x1ce)),'drm':{[decode(a0_0x4438e6(0x156))]:decode(a0_0x4438e6(0x1da))}},'espncol3':{'url':decode('_jj1uvmmUtiTn8TQLn.Tj.On0Pm:PTj.Tjm=xq?mEGU.m:_YTT.O(YR3iQyLQc..LQcy3LMc3QMYcst0yJLtI3RMt)m8Yuj.7n81i'),'drm':{[decode(a0_0x4438e6(0x1b0))]:decode(a0_0x4438e6(0x142))}},'espncol4':{'url':decode('_jj1uvmmUtiTn8TQLn.Tj.On0Pm:PTj.Tjm=xq?mEGU.m:_YTT.O(IeLL0bLMcLLLQcyQIIcYQeLce3iteiJIMttY)m8Yuj.7n81i'),'drm':{[decode(a0_0x4438e6(0x1c3))]:decode(a0_0x4438e6(0x1b2))}},'espncol5':{'url':decode(a0_0x4438e6(0x15f)),'drm':{[decode(a0_0x4438e6(0x184))]:decode(a0_0x4438e6(0x148))}},'espncol6':{'url':decode(a0_0x4438e6(0x284)),'drm':{[decode(a0_0x4438e6(0x1f1))]:decode(a0_0x4438e6(0x1fc))}},'espncol7':{'url':decode(a0_0x4438e6(0x16d)),'drm':{[decode(a0_0x4438e6(0x203))]:decode(a0_0x4438e6(0x1f2))}},'espnnl1':{'url':decode(a0_0x4438e6(0x1ef)),'drm':{[decode(a0_0x4438e6(0x252))]:decode('II033iIti.Qi3I3Ji.t0teI3eiY3sQ3s')}},'espnnl2':{'url':decode('_jj1uvmmD1McYT1ckLeLJLeLJc_BTcTOnjQn17iniCTtiTni8iui1ntP8mOGU.miGuVQm6EoLLLQL3oLQIeJQmkPciYu_c_i7.YiCcYUtm6EoLLLQL3oLQIeJQn81iS1XujY70YOOjU'),'drm':{[decode(a0_0x4438e6(0x252))]:decode(a0_0x4438e6(0x14d))}},'espnnl3':{'url':decode(a0_0x4438e6(0x188)),'drm':{[decode(a0_0x4438e6(0x252))]:decode(a0_0x4438e6(0x14d))}},'espnnl4':{'url':decode(a0_0x4438e6(0x17b)),'drm':{[decode('R.III.R3MeR3Ry0YYJR33Q.YyeQbM3RI')]:decode(a0_0x4438e6(0x14d))}},'ziggo1':{'url':decode(a0_0x4438e6(0x177)),'drm':{[decode(a0_0x4438e6(0x160))]:decode(a0_0x4438e6(0x1d1))}},'ziggo2':{'url':decode('_jj1uvmm8YkLRnjUWn17injUnPiGiPnTOmD_sbyeytyJjDMJJQQs33yocQIsM3QIRQJmpEdlm3JmMMymRMMQMyQeJLmRMMQMyQeJLn81iSYttPKTjGTbPX~~lMnL~r_xQ=HyuUrZ11-W0cjc6kDQyytt.yyQMQtJRM3yYRRieyeRyIR.et3~QoH8OKep.U?FgT&GIZo?9MkP-xiLl?qKWZFPztx9tYDgUwQ8.Nw1M.fMz0_4U_s.eI.sbJibRiesbMRYRMLMyYiJsbLbQIitv5d:,'),'drm':{[decode(a0_0x4438e6(0x158))]:decode(a0_0x4438e6(0x1aa))}},'ziggo3':{'url':decode(a0_0x4438e6(0x1bc)),'drm':{[decode(a0_0x4438e6(0x174))]:decode(a0_0x4438e6(0x219))}},'ziggo4':{'url':decode(a0_0x4438e6(0x24a)),'drm':{[decode(a0_0x4438e6(0x250))]:decode(a0_0x4438e6(0x221))}},'ziggo5':{'url':decode(a0_0x4438e6(0x242)),'drm':{[decode('Rb0yLi3esMyIyMbIIyi3JIyRby3LMQi0')]:decode(a0_0x4438e6(0x1c5))}},'ziggo6':{'url':decode(a0_0x4438e6(0x1b7)),'drm':{[decode(a0_0x4438e6(0x192))]:decode('Y3t.tMs0tsiysILIte0Li3bysR0yR.3i')}},'elevenpol1':{'url':decode(a0_0x4438e6(0x1b8)),'drm':{[decode(a0_0x4438e6(0x282))]:decode(a0_0x4438e6(0x157))}},'elevenpol2':{'url':decode(a0_0x4438e6(0x25f)),'drm':{[decode(a0_0x4438e6(0x210))]:decode(a0_0x4438e6(0x215))}},'elevenpol3':{'url':decode(a0_0x4438e6(0x1ed)),'drm':{[decode(a0_0x4438e6(0x230))]:decode(a0_0x4438e6(0x21e))}},'elevenpol4':{'url':decode(a0_0x4438e6(0x179)),'drm':{[decode('eM33.JRL3b0yebe03IbR.t.RL0QM0Q0R')]:decode('QLJtI3bsQYYJYQ3b0iRMiYIie33eIyQR')}},'tf1':{'url':decode(a0_0x4438e6(0x1c6)),'drm':{'':''}},'setantalt1':{'url':decode('_jj1uvmmj7nOGU.ntiTntkYj.unOjmOGU.miYu_meJQLLMmGTi.Wn81i'),'drm':{[decode(a0_0x4438e6(0x1eb))]:decode('Rsbi..30J..betIJLLQ.3tJbtys0btL3')}},'go31':{'url':decode(a0_0x4438e6(0x244)),'drm':{[decode('JQLYisI.MJY3ybts3MtI3syee.MQY3J0')]:decode(a0_0x4438e6(0x162))}},'go32':{'url':decode(a0_0x4438e6(0x20b)),'drm':{[decode(a0_0x4438e6(0x1d5))]:decode(a0_0x4438e6(0x22e))}},'go33':{'url':decode(a0_0x4438e6(0x1a0)),'drm':{[decode(a0_0x4438e6(0x1f8))]:decode(a0_0x4438e6(0x18c))}},'go3ex1':{'url':decode(a0_0x4438e6(0x224)),'drm':{[decode(a0_0x4438e6(0x1d9))]:decode(a0_0x4438e6(0x286))}},'go3ex2':{'url':decode('_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpMmwrRoEzl&o=xq?oxl:mlzpMn81i'),'drm':{[decode('YiMLJ0byeLseyLJiYQttbi3My0yJJstI')]:decode(a0_0x4438e6(0x18d))}},'go3ex3':{'url':decode('_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpRmwrRoEzl&o=xq?oxl:mlzpRn81i'),'drm':{[decode(a0_0x4438e6(0x161))]:decode('RsY30QMRLi0.bbLYQQt.LYbI0iRyye.R')}},'go3ex4':{'url':decode(a0_0x4438e6(0x15c)),'drm':{[decode(a0_0x4438e6(0x161))]:decode('RsY30QMRLi0.bbLYQQt.LYbI0iRyye.R')}},'go3ex5':{'url':decode(a0_0x4438e6(0x198)),'drm':{[decode(a0_0x4438e6(0x161))]:decode(a0_0x4438e6(0x170))}},'go3ex6':{'url':decode(a0_0x4438e6(0x163)),'drm':{[decode(a0_0x4438e6(0x161))]:decode(a0_0x4438e6(0x1a8))}},'go3ex7':{'url':decode(a0_0x4438e6(0x19a)),'drm':{[decode(a0_0x4438e6(0x161))]:decode('RsY30QMRLi0.bbLYQQt.LYbI0iRyye.R')}},'go3ex8':{'url':decode(a0_0x4438e6(0x171)),'drm':{[decode('YiMLJ0byeLseyLJiYQttbi3My0yJJstI')]:decode(a0_0x4438e6(0x18d))}},'go3ex9':{'url':decode(a0_0x4438e6(0x14b)),'drm':{[decode('YiMLJ0byeLseyLJiYQttbi3My0yJJstI')]:decode('i00yILLyLbRb.t.sIeIJLR.yJ.3RQyY0')}},'go3ex10':{'url':decode(a0_0x4438e6(0x251)),'drm':{[decode('YiMLJ0byeLseyLJiYQttbi3My0yJJstI')]:decode('i00yILLyLbRb.t.sIeIJLR.yJ.3RQyY0')}},'go3ex11':{'url':decode(a0_0x4438e6(0x155)),'drm':{[decode(a0_0x4438e6(0x161))]:decode(a0_0x4438e6(0x18d))}},'go3ex12':{'url':decode('_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpQMmwrRoEzl&o=xq?oxl:mlzpQMn81i'),'drm':{[decode(a0_0x4438e6(0x161))]:decode(a0_0x4438e6(0x18d))}},'go3ex13':{'url':decode(a0_0x4438e6(0x1a3)),'drm':{[decode(a0_0x4438e6(0x161))]:decode(a0_0x4438e6(0x18d))}},'go3ex14':{'url':decode('_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpQymwrRoEzl&o=xq?oxl:mlzpQyn81i'),'drm':{[decode('YiMLJ0byeLseyLJiYQttbi3My0yJJstI')]:decode(a0_0x4438e6(0x225))}},'go3ex15':{'url':decode(a0_0x4438e6(0x1c9)),'drm':{[decode(a0_0x4438e6(0x161))]:decode(a0_0x4438e6(0x18d))}},'ssc1':{'url':decode(a0_0x4438e6(0x22b)),'drm':{'clearkey':{'keyId':decode(a0_0x4438e6(0x208)),'key':decode(a0_0x4438e6(0x16e))}}},'ssc2':{'url':decode(a0_0x4438e6(0x254)),'drm':{'clearkey':{'keyId':decode('30tbteeReI.My0isYiQteeJLYIJiiiRt'),'key':decode(a0_0x4438e6(0x27b))}}},'ssc3':{'url':decode('_jj1uvmmuutcRc.Ttn.ik.T.WjtiTnT.jmPKjmUQmyM.3JQMeeeeMyMYYYMYQMLeJ3RM.s3QymGTi.Wn81i'),'drm':{'clearkey':{'keyId':decode(a0_0x4438e6(0x152)),'key':decode(a0_0x4438e6(0x16c))}}},'ssc4':{'url':decode('_jj1uvmmuutcyc.Ttn.ik.T.WjtiTnT.jmPKjmUQmeMJs.YessM3sy0Li0MyeeIiJyR.YYiIRmGTi.Wn81i'),'drm':{'clearkey':{'keyId':decode(a0_0x4438e6(0x261)),'key':decode(a0_0x4438e6(0x1b9))}}},'ssc5':{'url':decode(a0_0x4438e6(0x1bd)),'drm':{'clearkey':{'keyId':decode(a0_0x4438e6(0x1af)),'key':decode(a0_0x4438e6(0x1d8))}}},'sscex1':{'url':decode(a0_0x4438e6(0x1c7)),'drm':{'clearkey':{'keyId':decode(a0_0x4438e6(0x24e)),'key':decode(a0_0x4438e6(0x1a4))}}},'sscex2':{'url':decode(a0_0x4438e6(0x239)),'drm':{'clearkey':{'keyId':decode(a0_0x4438e6(0x231)),'key':decode(a0_0x4438e6(0x1cf))}}},'sscex3':{'url':decode('_jj1uvmmuutc.Wj7YRc.Ttn.ik.T.WjtiTnT.jmPKjmUQm3bQtJtRbLe.byM3yYJy0RyM3IQ0i3eY.mGTi.Wn81i'),'drm':{'clearkey':{'keyId':decode(a0_0x4438e6(0x153)),'key':decode('iRLLJ..JI.ss0MeIRIsM3.0bRLiRQ3LY')}}}};function a0_0x597d(){const _0x2f3ca3=['_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumqprdlc?=muYoiYu_oU8Wmqprdlc?=n81i','QQt3tQtM.bLR3etbQ.Jyiyy00ItRYRIe','L0Qbi.Y..RbbteQ.IYJJtbQIR3iesYYb','getElementById','_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYRmi.bYKOjmGTi.Wn81i','YMYseJsMLesbyJML3ItM3yI03Q3ybt0L','RRyIeLs3QbJLYJJbe.e3RMy0sLYtJsei','_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OuJmY7.TYyn81iSTXb7P0GTuW8.CC','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLQJmuj7.Y8n81i','siMJQIRLtRRLI.iM0LJiMY00RyYJyyQL','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLeImuj7.Y8n81i','orientation','3JYQ.iJ.IJtYY03.0QLLIb.eRLiMtbyb','L.3LbMYQIbib3iYysJ0bJIetiIesL00M','_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYemi.bYKOjmGTi.Wn81i','getPlayer','I3.YQ.RMMMsYitiRJQ30YYtM00bRJ3Qy','s..IeLJ0QRy3LyIQisI0sQtLJMY0eRJJ','_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYMmi.bYKOjmGTi.Wn81i','_jj1uvmmOGU.cPT.Y11c17icT.DunYVY8YGB.inT.jm:PTj.Tjm:FxHorEQc:dacyumEGU.mt_YTT.O(KTGU.7uPc.Yuj)m8Yuj.7n81i','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumF6:dlc?=muYoiYu_oU8WmF6:dlc?=n81i','i3ytRMebRJ3QybRI00.eIL3LMsM0QLtR','stJst0si.IyJeLJMtLJYtIy.3.LJeyJM','3M3.LY0YI3MetReyJYM3RQ.ytLtRJbsb','_jj1uvmmtiTO0njU1OYC_P8.nOjmOGU.m.iumdlRoq1P7jMo?=o?l:mwrRoEzl&o=xq?oxl:mdlRoq1P7jMo?=o?l:n81i','J0s00tbQieQQYeJ.J0Rt.iYRIM.ybYRR','shaka-ui-load-failed','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLQ3muj7.Y8n81i','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumqprdlMc?=muYoiYu_oU8WmqprdlMc?=n81i','i0y.3yLLQYQ.ybtR0bMJQMitQeyiisei','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmO_7cTGj7PmOGU.mtOG.TjumiYu_m.TtmOuiYu0UkOUmPKjmUQm00ey3YRJMJtiysL3Yb00IyYe3isQit.Imt.Ttn81i','_jj1uvmmiYu_MnYTjGVnuVmuj7.Y8mTUGiGYou1P7joQm1OYCOGujot.Ttn81i','IQ0bMi3Q0I.QRsLQYtJJsIQeJyQQMQ03','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmiK0cTGj7PmOGU.mtOG.TjumiYu_m.TtmDPK4UVbT8TmPKjmUQmQyQ0eMbL3YQ.y.Is3eLMQIsMI..y3it3mt.Ttn81i','YieReQy3.bii.IR30MI0.QJtIY0IeQRy','rgba(255,\x200,\x200,\x200.3)','_jj1uvmmbuOCnuj7.Y8n1.YtPtVjUntP8m:PTj.Tjm:FxHo:dacyumEGU.mt_YTT.O(UtQLMQTLs4)m8Yuj.7n81i','iMMQ0YJYJY0JJ.RL3RtLLQiMtyYR.ete','Y3RMR.YII0MiJMLLYy3.Q0tMsRMMiey3','esiMYtIMQLtb0tYReIJttJsIYLQt30MI','red','warn','_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OuJmY7.TYoQWMn81iSTXb7P0GTuW8.CC','IQt3yteYMYbRJtQJ.MLRIsiYeIIYJ.Iy','33bJtst0isIRRsyt0ebQMis.MJitiJR0','querySelector','.Y.eQYQ.RILyQMyIJRLsyt0byRMtst3.','configure','The\x20video\x20has\x20now\x20been\x20loaded!','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpQmwrRoEzl&o=xq?oxl:mlzpQn81i','QJ.MRsiL00iIYI0MtbiRYIYRJbJRMR.0','iMsQLyiyMs.yb3s.se0QIRIeYIb3sIJ0','526f4a760ef52ab85056fbc10ea27584','iMbIMbJ0s.itIYQYLeiRIR0YLtML.bI.','siJ00Ib3J.QRR.yt0RRyyL0yIR0J0JsM','Unable\x20to\x20load\x20the\x20UI\x20library!','_jj1uvmmuutcQc.Ttn.ik.T.WjtiTnT.jmPKjmUQmtJIJ.y3QI0eeyQyR33YQYy3s.3YyetYQmGTi.Wn81i','_jj1uvmmjkO81LMnYVY8YGB.inT.jmPKjmUQm3teLRYJIJJeeyiyRILRee33bQLeLe...m8YTGb.ujn81i','ee.eb.y3I.ItQ3bJtIsItRQMJiy0tb.i','ysJYee.bsMte.Ms.RQLJJ30QJJsiYJQe','Mt30sQI3eJReMs.eMyiJJJM3tLIM.bQb','JetI.s.sRYRQy0Yt0esLeQyYJLe.YRLJ','yi3IMyI0iytYy.0tI.sLyyRMJebIeLsi','LtILLYs.Y.LLIs.LIssQyQ0J3tI0bbty','8b40d3a415517224245a79e907cb8ef0','bbes0iRybi.ytJLMMR3e3sIb.RIyiiJi','ebRiMbMtQIyMJJY.IYM3MQLb3IsJt0.L','JRYtJJMii.RQLtb0yttJbI0yR0RyQIJi','RRRIJM.R.QR3ReMI3JsYIYL.M3Ye.eiQ','load','_jj1uvmmuutc.Wj7YcMc.Ttn.ik.T.WjtiTnT.jmPKjmUQm30sLi.M0sLiyys0Y3YsyeL0YILIMJYMimGTi.Wn81i','player','1645578WrgJZG','.3MiYYsts0b0LRiIIRMsyJRbi0iRsRRJ','t0LLyb0QLL0iIMbMRsIReJM3IQ.RMRJ0','location','keyId','channel','sRtYtYIs0.3IIIt.Itb.0R0Y0Yi3JJIi','_jj1uvmm8YkLynjUWn17injUnPiGiPnTOmD_sbyeytyJjD3Jee3J3MIoc3QI3MQMIMmpEdlm3JmMMymRMMQMyQJQLmRMMQMyQJQLn81iSYttPKTjGTbPX~~lMnL~E6qMpArejC_1eBQp.Jr0AxJtisYy.tRetyyIMQJs0IRsJ.JibbMIRM~AZDMi&q?DczQpf:H_IkwW:FU7zzBkFigx.ILLN43OJYP959IY_CaJzI&5zKsT=ayby33sJQet3R.YsY3t..JiiRRQRsty.0.v5d:,','search','_jj1uvmmtiTO0njU1OYC_P8.nOjmOGU.m.iumdlRoq1P7jo?=o?l:mwrRoEzl&o=xq?oxl:mdlRoq1P7jo?=o?l:n81i','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumF6:q1P7juMc?=muYoiYu_oU8WmF6:q1P7juMc?=n81i','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumA&z6LQmuYoiYu_oU8WmA&z6LQn81i','addEventListener','d87d08fbe6505ad7099b8c258f396d15','I0YR.QeR.b3IeJiJ.M0LJ3ybtbsybe3b','_jj1uvmmiYciyRJMRyIMLLQL033LLLQLRLMLLLLLLLLLLLLLLL0nGintiTnK1t07PYi0YTintP8mD1mD1ycYT1ckLeLJLeLJc_BTcTOnjQn17iniCTtiTni8iui1ntP8mOGU.miGuVQm6EoLLLLIsoLQIRsLmkPciYu_cb_icYUtm6EoLLLLIsoLQIRsLn81iS1XD.0','_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYJmi.bYKOjmGTi.Wn81i','Error\x20code','18f2b2027ce26867c23dcd7f57faa245','.t0tI.Jb.J0Qye.b0JJe3b0etbsyMsb3','_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OuJmY7.TYen81iSTXb7P0GTuW8.CC','QJ0bsMitMMsyRiIMItyRQ3.QIRyL3RsR','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpQLmwrRoEzl&o=xq?oxl:mlzpQLn81i','R.III.R3MeR3Ry0YYJR33Q.YyeQbM3RI','detail','_jj1uvmmuutcMc.Ttn.ik.T.WjtiTnT.jmPKjmUQmYQJi0M.tRR3YyyeY3MiIteyQttIMIRbImGTi.Wn81i','Access\x20denied:\x20Unauthorized\x20domain','QQMMRRyyeeJJss33IILLQQMMRRyyeeJJ','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iump.8.7uYjKAYTkuYmuYoiYu_oU8Wmp.8.7uYjKAYTkuYn81i','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLy3muj7.Y8n81i','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumF6:T.Duc?==muYoiYu_oU8WmF6:T.Duc?==n81i','0JseIiJeLeYRssit.tsJ3YR.t0Qt0YiL','3Y0yssyQIRLtysJs3LeQebIYLLi.t0LY','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumadlmuYoiYu_oU8Wmadln81i','bRbLJQi.iI0sL.3QJLeILie3LM.tiYJi','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmO_7cTGj7PmOGU.mtOG.TjumiYu_m.TtmbLNUV77Y34mPKjmUQmb3bYQsbL3seJybeQYYyietsLL0.yR.tymt.Ttn81i','_jj1uvmm7nitun7.itiTn1OmOGU.iYu_mPMmjUT1OYC.7Tt1mOGU.mQQou1P7jumOGU.nGu8Om1OYCOGujn81iSGTi.WFPi.X2iK88CbGO.X2u.7U.7ouGi.o.U.TjuXL2iU7XsMLLLLL','2b801fde1ad4839d4080d6ec6b0ec4ce','etJsMbJ03eYIyJR33sMiLMQybs3LJ.iy','3defe59c38079ccad25a436200ad3bd7','0R.y.syY.ML3L0QRs.J300iL.b3Ys.Le','9110b6be31b4bbdce67374bae3395269','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLRJmuj7.Y8n81i','a58317ffddf318f1540f31f67d95b5fb','_jj1uvmmKu.O.tjP7ntiTnGTjGk7YOcPjjnT.jmx=qpMmx=qpMnGu8Om8YTGb.ujn81i','.0eYRYy3bR.QIQYLL.RYtQ.MiysLtyIQ','_jj1uvmmOGU.cicLMc7Pk.7ucKDc17inYVY8YGB.inT.jmPKjmUQm7c17imt_cLQc17ic7cUMmiYu_ct_cLQc17ic7c_imGTi.Wn81i','sY0y0IY.eYy3YYeMJ.eQQYIQR03RMsJI','getControls','iQM.ytIiteMbyt0Y0sYtI0MMs3RQs.ys','_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYImi.bYKOjmGTi.Wn81i','tibLLLQbJIRIyMiYIILb.3QYbYR.0Lti','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmiK0cTGj7PmOGU.mtOG.TjumiYu_m.Ttm08T.OPetsYmPKjmUQmRt.Mtitye3IbyJQ3IRMM0iRsQstssIesmt.Ttn81i','33RJb0LyiJMitJytIb3YRI.b3JyLie.0','b573f718f1551d2cf2a335ca778f5604','clearkey','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmiK0cTGj7PmOGU.mtOG.TjumiYu_m.TtmBCQ..euu_1mPKjmUQm0itbbYJIbYR0ybR00ReJItItsR..QtLQmt.Ttn81i','fullscreenElement','d46e4215e279b224e9d2a772db9c74a1','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumx6dlmuYoiYu_oU8Wmx6dln81i','L3syL3Yy30.3iesLyJtR3J30Rs.YIL0Y','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLeJmuj7.Y8n81i','yeb.tIQt.QbQI0J0QbRQiJIitbYYbJti','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmO_7cTGj7PmOGU.mtOG.TjumiYu_m.TtmDb3KuYkeQ.mPKjmUQm0iR0LtRQybbby00QY0yJIRRe3bRtiMiRmt.Ttn81i','0eitbsMQY0eMMYbIMYIiR0bL0iee0eIJ','tYJeYbILYite.Rii0Q3L.QJyMJ00JsiY','error','hostname','bf1178841770fdba74f8629f0f06d2c0','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumF6:q1P7juc?=muYoiYu_oU8WmF6:q1P7juc?=n81i','iyQQMJ.IYJeRLYe3MMs.R3.IJJetQit.','R0iiitRY.R00yR0sYIRiJbbsMIIQ.eit','sYeJe3QLtIt0ReYtYLeysJYbQL0bb.Le','_jj1uvmmUtiTn8TQLn.Tj.On0Pm:PTj.Tjm=xq?mEGU.m:_YTT.O(0RLYYeQ.cIsbYcyReyc00R3c3sQb0RJL.I3y)m8Yuj.7n81i','split','Lsyey0YbisLyQRY0esYR.0Mei.MtsItR','4c14a6a924ef7fb32534dd590d99d499','YRQtbeQRJs3IeQy0s.QM0IttIIRLst3y','i.Q0Lt.QIbY3LyYQtysR.03.bMietbJi','rgba(255,\x200,\x200,\x200.5)','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLeQmuj7.Y8n81i','bYeRy.Jiy3.ttbILeYyyILeQYe.M3Lt3','Channel\x20not\x20found','6948AMFNQR','bi0LLIQtbJsiIteIJi0b0LstbJbyt3be','8gHTUWp','eiRbt0.ieRsyI..JMM.iL.JybRQtQt0b','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpImwrRoEzl&o=xq?oxl:mlzpIn81i','_jj1uvmmOGU.cPT.Y11c17icT.DunYVY8YGB.inT.jm:PTj.Tjm:FxHorEQc:dacyumEGU.mt_YTT.O(hq6q)m8Yuj.7n81i','II033iIti.Qi3I3Ji.t0teI3eiY3sQ3s','object','.shaka-overflow-menu-button','2022328eDVLYA','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumuPtt.7t_YTT.Ocj.ujmuYoiYu_oU8WmuPtt.7t_YTT.Ocj.ujn81i','si.eiiL3Yi3LyQie3JtMbQJtttIyILYQ','I3tbiJbiy3QMyIsb0MyitsebseyebM..','yRiQtR0MeMLsbbR30MMttb.QsiRLMRJs','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpQQmwrRoEzl&o=xq?oxl:mlzpQQn81i','Y3Q..yYJIyb.tiJYY3YJ3M.eLMy0RQRt','IYQtYIs3iR00eb.QRLLJIJbIJ3ReJs.0','RtbY3JMebJeLyLJ.0bJYyiQ.YsRsbesM','_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OusmYuo17.8GK8Qn81iSTXb7P0GTuW8.CC','_jj1uvmmOGU.cicLMc7Pk.7ucKDc17inYVY8YGB.inT.jmPKjmUQm7c17imt_cLyc17ic7cUMmiYu_ct_cLyc17ic7c_imGTi.Wn81i','_jj1uvmmYVY8nuj7.Y8n1.YtPtVjUntP8m:PTj.Tjm:FxHo:dacyumEGU.mt_YTT.O(UtQLMQTLs4)m8Yuj.7n81i','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpymwrRoEzl&o=xq?oxl:mlzpyn81i','0255fb620f4f707ea7ba090058718306','_jj1uvmm1P1etOKuj.7YLLi.LsQsMRsIYJMiJQ3In_C11njUmpEdlm33333333mMMymRMMQMMsJL3mRMMQMMsJL3n81iS77uG1XD.0n_C11njUvyyR2BPT.Pbbu.jXL2u.7UGt.jC1.XQ2Gt1GiX2YttPKTjjC1.XQ2OG8GjbOKWXcQ2OG8GjiK7XcQ2YttPKTjGTbPX5LUM3QOPUZFEhBNj94pjgKr9Df:PzfaVyyI/%MAA5:tYDhpeYJOBC=p/esE9.K:Le:uyyuFJUyp0IJPEt.1dwr=&7tC8?Az_WeP/py4UMbp-L%R=%RxMLMRLMLJQLQsMy%Rx5d:%M:QLLRJJRI3R%M:QQenQJynQ3snML%M:MLMRLMLJQLQsMy%M:K7Tv?KYD.GvOGU.dlv9dlQLLLLLQJQ%M:QLLRJJRI3R%M:cQ%M:L%M:Q%M:%M:%M:M%M:eIR%M:%M:%M:M%M:QRyRQQs%M:L%M:My3yQM%M:yseJMIyR%M:%M:%M:M%M:Q%M:&6=2wKY7i&TtdC1.XM2GjX?yuzxxxxxxxxx=hrCMs:FAa&o3ZE-Rg._zl9z-a-lY_&JEYYM6t8G_r=?Z=JIexM0wb84FytP.O47QAMilsZNuKQE.PqM&_aVJQQjKMFHggOK4lAqY0_bdce/1kHcBsjbVdwFCJOy&-Ci7Vs.E_QMiB?4NE-RIG/yNp91&CCoz?&ylDV_sVp&ooCc=Q?ULygjYKYN=ZOjtL--fKZuRO/hJd_Q0xELGJFlLfCT3?Ixt7:/M/9JxwrwPCV17URoIDW81b6&B1lNsELxxxx2j.TYTjziXJLLQ','_jj1uvmmUtiTn8TQLn.Tj.On0Pm:PTj.Tjm=xq?mEGU.m:_YTT.O(3LtsyIJ3cYM.bcyLLec3JJQcLyeb.IsyL3Y3)m8Yuj.7n81i','.bRyY.IQ0ybMyQe.3yRI0MYiQLe.sy33','YiMLJ0byeLseyLJiYQttbi3My0yJJstI','iMiyYttJ.sIyys0eebRbetLMJsYbLJbe','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpJmwrRoEzl&o=xq?oxl:mlzpJn81i','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmGYicTGj7PmOGU.mtOG.TjumiYu_m.TtmP0PW.eRDCPmPKjmUQmbs3IMYIisLJiyQIY3yJisR3bYMM.YRR.mt.Ttn81i','7ef86abd9a62042858370852836c50b4','innerHTML','esJIsRLbb0ity0Mbi3IyeIMIiIYt.LJR','yRQL.i030Ibb.sIY00yL0YtYbYss3.tR','_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OuJmY7.TYJn81iSTXb7P0GTuW8.CC','2cec65c6b79be6c2d4481c6e0ef79bfc','sMReIRtsL.Miyty3JMseyRI3.3LQJ3b3','e.QeLRbRRI30RybeLIIIRRb.iY03ys.b','_jj1uvmmUtiTn8TQLn.Tj.On0Pm:PTj.Tjm=xq?mEGU.m:_YTT.O(eY0ei03ycMMRecytQLcILJJc0.I0tM..L3sY)m8Yuj.7n81i','eeLsMsi.ytIJ.bQ.tbb3syILeyIRe3Lb','b0ei.0ebJ33biJs.tMLtsQQIQtsbyeIL','IiiYbIt30R3Y0.esi.bYYiQI3LQyiRLy','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzp3mwrRoEzl&o=xq?oxl:mlzp3n81i','I3L.eyiJsQbbtM0Mbytbey.setY.LYtM','3CqSlTC','yi0.Yy0esQRYyYYQY.RYMeyytieMMbts','3yR.MM3Y0QLI.IYYJty3MM..yYiLeisi','_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OuJmY7.TYMn81iSTXb7P0GTuW8.CC','_jj1uvmm8YkLynjUWn17injUnPiGiPnTOmD_sbyeytyJjDseQJ3Q33ocJMsMI3L33mpEdlm3JmMMymRMMQMyQeILmRMMQMyQeILn81iSYttPKTjGTbPX~~lMnL~N0tu/_o45e:IAtZtIeI.oDY.yy0y3Js0RyQsYYsJ0ei0MiYMLb.yJt~-ZBdh4A3N=QBik0/4aplE/9cjlLNG6IaA?:oGu.w7u8dqa44LJPw=jwO1q:awrDHRJMJtbL3etL3iLMyts.yYYbtQ3tRMyyLv5d:,','MieItbIyiQLLMLY...LQYIstiLsQJ..Y','_jj1uvmm7nitun7.itiTn1OmOGU.iYu_mPMmjUT1OYC.7Tt1mOGU.m.O.U.Tou1P7juoyo_imOGU.nGu8Om1OYCOGujn81iSGTi.WFPi.X2iK88CbGO.X2u.7U.7ouGi.o.U.TjuXL','get','_jj1uvmmD1ycYT1ckLeLJLeLJc_BTcTOnjQn17iniCTtiTni8iui1ntP8mOGU.miGuVQm6EoLLLQQLoLQIeJMmkPciYu_c_i7.YiCcYUtm6EoLLLQQLoLQIeJMn81iS1XujY70YOOjU','b3eiRitiR3I3QRJ3Y0RiYeIs.Is.0itt','ace54ce15b69d249b00395c9e6b85b90','_jj1uvmmOGU.cicLMc7Pk.7ucKDc17inYVY8YGB.inT.jmPKjmUQm7c17imt_cLec17ic7cUMmiYu_ct_cLec17ic7c_imGTi.Wn81i','MRMisQ00LQRiRIbb0IM..3tesJb0s.3.','Orientation\x20lock\x20failed:','RJ..yL.e3Iy3tYQe.RtY0Y3iys03bRy0','a97774e4175b80205c3cf104e9574208','LLMLyJtIYyI0IY0Qti0JJQJ0.teiMJtR','y.QMJMIsbtsYbRetsRJ0ibb.I3..tYYY','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLMMmuj7.Y8n81i','es.y30IIbRbJiybQRbeteYbittYL3ytY','RLR3y..eyMy.Y0yYbibbRyisYeI.L.bI','_jj1uvmmD1RcYT1ckLeLJLeLJc_BTcTOnjQn17iniCTtiTni8iui1ntP8mOGU.miGuVQm6EoLLLQLIoLQIyJymkPciYu_c_i7.YiCcYUtm6EoLLLQLIoLQIyJyn81iS1XujY70YOOjU','isJIiIY.MR30iiyMyb30tititIYR3LQb','_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYQLmi.bYKOjmGTi.Wn81i','bLyLss3s0yi3R.ei0Ii0tisJLY.tQst.','Iy3IItYt.yIQQtJQstMsi3b3s3i.M0yR','i00yILLyLbRb.t.sIeIJLR.yJ.3RQyY0','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLMymuj7.Y8n81i','MstLibIbYM.IRQy03tyIb3My.QbbIi3M','_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OuJmYuo17.8GK8Rn81iSTXb7P0GTuW8.CC','iLttML3MQRM0yRLYieY30tybRQtI0ssM','QYLbbYeRMYYMyI3yIL3MJ.MbJYRsbstI','i0tM3t0etJyMJL3LbI3yYe0JiyRJ00RL','e3yYiM3eit0I.siyMtbR.IRbQttRb.QQ','2be3b8e9f4756601e5b263beb14c5908','url','0000816079a5ec4f093e3274bda26f2a','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpemwrRoEzl&o=xq?oxl:mlzpen81i','yellow','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpsmwrRoEzl&o=xq?oxl:mlzpsn81i','tQ30JYYsRI0.ytL0ssyJLebtb0eiJ0J3','769d61a2d6fd7030a5088df2e70c2654','.RQYeY3QtYbbeiLs.YMyQQYesQbtM.eI','473665tIziIW','MJ0iJL.LR00.is3QI..YL0MsLseYQ3Is','_jj1uvmmtiTO0njU1OYC_P8.nOjmOGU.m.iumdlRoq1P7jRo?=o?l:mwrRoEzl&o=xq?oxl:mdlRoq1P7jRo?=o?l:n81i','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumG6.Dudlc?==muYoiYu_oU8WmG6.Dudlc?==n81i','_jj1uvmmUtiTn8TQLn.Tj.On0Pm:PTj.Tjm=xq?mEGU.m:_YTT.O(3sest0LYcRe3ycyLticILQ.c3IRstsi.0Y3R)m8Yuj.7n81i','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpQRmwrRoEzl&o=xq?oxl:mlzpQRn81i','LRtQs.M3IQQbsQMMQYt0tL0QQbILLyLQ','ie.RetLbRItsJYibMy3eRis.YQ3tsQ.s','0iJMM0L.JQLMIei.R0L0tt03eLttYYYY','_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TYsmi.bYKOjmGTi.Wn81i','ytQMQ.RQbIJi0MIQMytRYyLyyRYtiJ.i','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLe3muj7.Y8n81i','LeRy.systsL0RJyYYsMQL.Q0bRQIQibL','_jj1uvmmD.0jUuj7.Y8n0_j.O.tP8n0Ym_OusmYuo17.8GK8Mn81iSTXb7P0GTuW8.CC','.yQtRYJbseRM0M.RY3M3iIe3LQMyt3Ii','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmO_7cTGj7PmOGU.mtOG.TjumiYu_m.TtmGM1t47y1.emPKjmUQmIQM.Ii0eJiseyLR03YIYtLYsQIQQLbRJmt.Ttn81i','IJte.bJIysIsRMY.sRybIJMsy3tQIsMI','t330eQM0QsY0ybJt0LI.0LbbyYQLeJ.i','3YJLis33IbbQMJ..Q3IeRRe.IMMeyb3.','drm','ebLiQLtbyYets.MM.M3J0s.3t0y.sIby','map','lock','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumA&z6LMmuYoiYu_oU8WmA&z6LMn81i','eIRQbtLsbM3ebb.yL.0I3.QRL00LILbI','_jj1uvmm8YkLRnjUWn17injUnPiGiPnTOmD_sbyeytyJjDQLMyLQI3sIosesJ3J3JJmpEdlm3JmMMymRMMQMyQeMQmRMMQMyQeMQn81iSYttPKTjGTbPX~~lMnL~5aT=oYbKPuh?bger&Na9rDbYLQt3YteJtbyeQQi.RItMtyYRtY0Ms3~GlW-40jbMkWoigHNzcUje:y:KR:rg=4ZYDJ:oVrMdMD8RLbDPQtj=Qk7o.Mp7kd_y33JstRQssbRtRy3yMLRQJMRt0M.LJtIv5d:,','_jj1uvmm7nitun7.itiTn1OmOGU.iYu_mPMmjUT1OYC.7Tt1mOGU.mQQmOGU.nGu8Om1OYCOGujn81iSGTi.WFPi.X2iK88CbGO.X2u.7U.7ouGi.o.U.TjuXL2iU7XsMLLLLL','0b3seJb003JJ..MietsLQtMM3Iii3i.R','landscape','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumdlrT.cMmuYoiYu_oU8WmdlrT.cMn81i','_jj1uvmm8YkLMnjUWn17injUnPiGiPnTOmD_sbyeytyJjDyLseeJsLsocR3QsR3QQQmpEdlm3JmMMymRMMQMyQeQQmRMMQMyQeQQn81iSYttPKTjGTbPX~~lMnL~ClGLiF9yGtre-YI.IM&fbk33QM.QtQLyybsiResLJJysM.R..II.by~MiaAI&cU=jPx0gOQJIE0t/1W5khl/j0.5opO_wb65bO1_UO4r0elY&_W7K&dgwINtttYbete0Jee0bseLy.is.teYQiisI3bv5d:,','_jj1uvmmuutcec.Ttn.ik.T.WjtiTnT.jmPKjmUQmIIM3I.YteYs0yRQIILeiYeIeYb0isIM0mGTi.Wn81i','LLyeYQQ3.MRQbQRMJ0ti0yeReL0Qt.YY','_jj1uvmmiYBTBTn.OKjKTYnDP7V.7uni.UmmiYBTcOGT.Y7cLyJmuj7.Y8n81i','b4f351533d633abf76cda47fe75d579b','LLMMLiy.0JJQYiI0RiiytyRRyRIbts.i','451674qmBkKE','eyYMtQQL3etRQe.iJbb3etRyLY3JLIei','i0YiQJsM0Q0bRiLY0iQtQtMQJQLesbII','YJiY3syMeLMt3YMQeRLJsbebMYsLb0LM','_jj1uvmmtYt_._uGQ0nT.j1OKunt_mOGU.m.iumjbQ_im07PDu.7ciYu_mjbQ_in81i','_jj1uvmmuutc.Wj7YcQc.Ttn.ik.T.WjtiTnT.jmPKjmUQmJyste3JIRbQiyJYbIM0is.JIbQsIQMt0mGTi.Wn81i','shaka-ui-loaded','_jj1uvmmtiTInjU1OYC_P8.nOjmOGU.m.iuMmlzpQemwrRoEzl&o=xq?oxl:mlzpQen81i','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmGYicTGj7PmOGU.mtOG.TjumiYu_m.Ttmj.14N.4QCumPKjmUQmtItIQeI0Y..syIYQIJQM0QeI3yIe3eIYmt.Ttn81i','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmiK0cTGj7PmOGU.mtOG.TjumiYu_m.TtmK1sN1Dt_I0mPKjmUQmYJieiQYQM3s0y3IR03eItMiJttbMtJeimt.Ttn81i','LYisRe.sLs.QtsI0teeL.bYyIbM.Yy0i','_jj1uvmmkLLRcuO.cKuct8Ybc17ictbntiTn1.YtPtVjUntP8mtPLQm:PTj.Tjm:FxHoqMc:dacyucUMmEGU.mt_YTT.O(eLQysM3csQJQMJcy3bIeQbYbe.)m8Yuj.7n81i','_jj1uvmmUtiTn8TQLn.Tj.On0Pm:PTj.Tjm=xq?mEGU.m:_YTT.O(JMeJsietcMIetcybbicYts.ctIsyI.3sy33y)m8Yuj.7n81i','tbLsybbiMJyJtItMb3eQR0ysbYes0tRL','0Jb3sYRYQM3i0ise.YiLRJbeIJ.i.Y.s','MyRMy3i3i.Qbb3tste3s..MLesRQseMR','catch','key','.QQLLty.MybLM3iysYRJ.YiRsbLbieeb','Rbtet.33Y.MyyJL0YbYyys0eRY0ebey3','817450oxZyuV','_jj1uvmm1TPDOGU.cYnYVY8YGB.inT.jmOGU.m7jO_imiYu_m7jO_in81i','YitL3..QtMLYsRyIsMYeetIY.00iQ333','tbIJ3ILJs0tLyJeeIRL3yis3RMI3MbiQ','JiQeeJ3.QiY0eI.sMLMY.QM.sQeLeQ3e','3tQRYb0bYey.YRsYRJ30303eILMQbJ.R','J03iy0te3JQeyRIIey3eQ..iYssQbyQs','7099325123bae7810db508727bb0bc7d','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumwdlc?=muYoiYu_oU8Wmwdlc?=n81i','2968LKjKOC','video','_jj1uvmmPjj.nOGU.nbOCnDDnYGUctiTnT.jmGYicTGj7PmOGU.mtOG.TjumiYu_m.TtmDC0kBLP773mPKjmUQmMbJiQJQMY0iyybe33RIQsb3Ye3e0Ieebmt.Ttn81i','161202TkgzgE','51f8fd5eef736dccaea9235b621731e7','MJttR.RRyR3e3iRI3JRMMbQJ.QL0e3MR','67b1172a05bcb38a91a304d7098ce7f5','J0Y3LLJsR0MLssJtLt3eLQRLiye.QIML','0Yi3.bbbJ33tLi00RsQQ.yYsQQytMMYR','code','QLJQ0.QMiRLRMysyMJ.tMe.3RJI0MJys','_jj1uvmmjkO81LMnYVY8YGB.inT.jmPKjmUQmJ.eY333iy0b3ysYM0.eMQteebs0biL3tm8YTGb.ujn81iSGiXQe','3Y0MRRMyyM3ey.JM0LLQ3..tR..e3y3y','_jj1uvmm01tiT8YT17PinT.WjjUn_jn_7m01VcjUmY7.TY3mi.bYKOjmGTi.Wn81i','_jj1uvmm7nitun7.itiTn1OmOGU.iYu_mPMmjUT1OYC.7Tt1mOGU.mQQo.Wj7YmOGU.nGu8Om1OYCOGujn81iSGTi.WFPi.X2iK88CbGO.X2u.7U.7ouGi.o.U.TjuXL2iU7XsMLLLLL','a25d21e333dad3d131f126b7b57730be','_jj1uvmmD1QcYT1ckLeLJLeLJc_BTcTOnjQn17iniCTtiTni8iui1ntP8mOGU.miGuVQm6EoLLLQLsoLQIyyQmkPciYu_c_i7.YiCcYUtm6EoLLLQLsoLQIyyQn81iS1XujY70YOOjU','_jj1uvmmYUct_ctiTn8TtTPDnGimOGU.m.iumA&z6LRmuYoiYu_oU8WmA&z6LRn81i','be3RJR3MyeMtitYQ.Qt30b30IYsQReRy','sMYLRYLIiRR.yQMbQyYI0bYy.bMy0eyM'];a0_0x597d=function(){return _0x2f3ca3;};return a0_0x597d();}(function(){const _0x2cd900=a0_0x4438e6,_0x2e3cf9=['www.streamkaltaraid.online'],_0x41108b=window[_0x2cd900(0x23e)][_0x2cd900(0x27e)];if(!_0x2e3cf9['includes'](_0x41108b)){console['error'](_0x2cd900(0x255)),window[_0x2cd900(0x23e)]['href']='https://akusukagratisanlo.blogspot.com';return;}async function _0x3db8ae(){const _0x8f8351=_0x2cd900,_0x277e56=document[_0x8f8351(0x1f6)](_0x8f8351(0x1e0)),_0x45b1df=_0x277e56['ui'],_0x1fc779=_0x45b1df[_0x8f8351(0x26b)](),_0x20be00=_0x1fc779[_0x8f8351(0x202)]();window[_0x8f8351(0x23a)]=_0x20be00,window['ui']=_0x45b1df,_0x20be00[_0x8f8351(0x247)]('error',_0x17d90c),_0x1fc779['addEventListener'](_0x8f8351(0x27d),_0x478fe2);const _0x59bc48=new URLSearchParams(window[_0x8f8351(0x23e)][_0x8f8351(0x243)]),_0x5f1566=_0x59bc48[_0x8f8351(0x17a)](_0x8f8351(0x240));if(channels[_0x5f1566]){const _0x2c3fe8=channels[_0x5f1566];_0x2c3fe8['drm'][_0x8f8351(0x272)]?_0x20be00[_0x8f8351(0x222)]({'drm':{'clearKeys':{[_0x2c3fe8[_0x8f8351(0x1b1)]['clearkey'][_0x8f8351(0x23f)]]:_0x2c3fe8[_0x8f8351(0x1b1)]['clearkey'][_0x8f8351(0x1d3)]}}}):_0x20be00[_0x8f8351(0x222)]({'drm':{'clearKeys':_0x2c3fe8['drm']}});try{await _0x20be00[_0x8f8351(0x238)](_0x2c3fe8[_0x8f8351(0x196)]),console['log'](_0x8f8351(0x223));}catch(_0x3e626e){_0xfe0606(_0x3e626e);}}else console['error'](_0x8f8351(0x146));_0x1fc779[_0x8f8351(0x247)]('fullscreen',()=>{const _0x219e39=_0x8f8351;document[_0x219e39(0x274)]&&_0x39f11a();}),_0x45b1df[_0x8f8351(0x222)]({'seekBarColors':{'base':_0x8f8351(0x216),'buffered':_0x8f8351(0x143),'played':_0x8f8351(0x21b),'adBreaks':_0x8f8351(0x199)}});const _0x4d6950=document[_0x8f8351(0x220)](_0x8f8351(0x14f));_0x4d6950&&(_0x4d6950[_0x8f8351(0x166)]='<i\x20class=\x22fas\x20fa-cog\x22></i>');}function _0x17d90c(_0x285e11){const _0x59a0fe=_0x2cd900;_0xfe0606(event[_0x59a0fe(0x253)]);}function _0xfe0606(_0x330ce0){const _0x4d17c8=_0x2cd900;console[_0x4d17c8(0x27d)](_0x4d17c8(0x24c),_0x330ce0[_0x4d17c8(0x1e8)],_0x4d17c8(0x14e),_0x330ce0);}function _0x478fe2(_0x473d5e){const _0x399399=_0x2cd900;_0xfe0606(event[_0x399399(0x253)]);}function _0x719a28(_0x5e0489){const _0x2c691c=_0x2cd900;console[_0x2c691c(0x27d)](_0x2c691c(0x22a));}function _0x39f11a(){const _0x5a6c45=_0x2cd900;screen[_0x5a6c45(0x1fe)]&&screen[_0x5a6c45(0x1fe)][_0x5a6c45(0x1b4)]&&screen[_0x5a6c45(0x1fe)]['lock'](_0x5a6c45(0x1ba))[_0x5a6c45(0x1d2)](_0x4e0137=>{const _0x55e5b4=_0x5a6c45;console[_0x55e5b4(0x21c)](_0x55e5b4(0x180),_0x4e0137);});}document['addEventListener'](_0x2cd900(0x1c8),_0x3db8ae),document[_0x2cd900(0x247)](_0x2cd900(0x20d),_0x719a28);}());
+		// Channel data - add more channels if needed
+		const channels = {
+		  'rcti': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd', 
+			drm: { '9ba3e153ef8956d6e2b0684fcf74f58f': 'dbc28cb5c6426080f984a5b6d436bb30' }
+		  },
+		  'mnc': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/MNCTV-HD/sa_dash_vmx/MNCTV-HD.mpd', 
+			drm: { '828e0aba9825c3546a2831e4c0c36f7f': 'f85d3dcd38981368ab3da597e97ebdcc' }
+		  },
+		  'gtv': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd', 
+			drm: { '88f6c7cbd793374cb5f12d7e26dcd63b': 'e82daa7c7bfb03d99327463fdbd37336' }
+		  },
+		  'inews': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/iNewsTV-HDD/sa_dash_vmx/iNewsTV-HDD.mpd', 
+			drm: { 'a31cf5136789514b7e12b9cc99307c84': '980e54d671ffc2b2f4cf54e75cae0ac2' }
+		  },
+		  'rtv': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/RTV/sa_dash_vmx/RTV.mpd', 
+			drm: { '30384ee5424eab4afdff34d7a59e0ef9': '5f3d2f2c194266ae9a28210f8976cbe0' }
+		  },
+		  'sindonews': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/MNCnews-HDD/sa_dash_vmx/MNCnews-HDD.mpd', 
+			drm: { '26cc3e3343858d3986322f16e10b5823': '0ad735e707e1c79bc550efa49f2ea4bd' }
+		  },		  
+		  'trans7': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/Trans7-2/sa_dash_vmx/Trans7-2.mpd', 
+			drm: { '26bd60e03bbed7819eea0b27075a1897': 'd221ba6a6ab66e3083c001d2c4a3e5c5' }
+		  },
+		  'transtv': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/TransTV-2/sa_dash_vmx/TransTV-2.mpd', 
+			drm: { '334950781f60a66f5e58324b70ac675d': '73caca97be8999ce9cfeb3babad8669d' }
+		  },
+		  'tvone': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/TVOne-2/sa_dash_vmx/TVOne-2.mpd', 
+			drm: { '90204c05545f95a262bb0d3ac45de870': '0e80f2a19fdf8da476bf695cd9570bb2' }
+		  },
+		  'kompas': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/KompasTV/sa_dash_vmx/KompasTV.mpd', 
+			drm: { '493fd10e609dd02ae97964f438e7e530': '695cf9896182c52f1c3a25820e7778f5' }
+		  },
+		  'antv': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/ANTV/sa_dash_vmx/ANTV.mpd', 
+			drm: { '4310edb8b9ffe79abb40bacafa778ec3': 'aebb7e86d8a336d9a93d3dd8a41153cf' }
+		  },
+		  'mdtv': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/NetTV-HD/sa_dash_vmx/NetTV-HD.mpd', 
+			drm: { '6b7bbcf1d511a56e6b3ceda392e4fa33': 'd1766244d7c1c44efd4c67aafae3ee7b' }
+		  },
+		  'tvri': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/PemersatuBangsa/sa_dash_vmx/PemersatuBangsa.mpd', 
+			drm: { 'ca65af90adc5e3ddb180e16426bb67da': 'b6f87a3a128dbd75ead036f596edeae7' }
+		  },
+		  'ar1': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls6/arena1.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'ar2': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls6/arena2.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'ar3': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls6/arena3.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'ar4': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls6/arena4.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'ar5': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls6/arena5.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'ar6': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls6/arena6.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'arp1': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls7/as_premium1.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'arp2': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls7/as_premium2.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'arp3': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls6/as_premium3.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'ar1x2': { 
+			url: 'https://webtvstream.bhtelecom.ba/hls6/arena_1x2.mpd?n=frobinsxmeyy', 
+			drm: { 'c18b6aa739be4c0b774605fcfb5d6b68': 'e41c3a6f7532b2e3a828d9580124c89d' }
+		  },
+		  'arena1cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena1_n/default/index.mpd', 
+			drm: { 
+              	'9002ec8c3dbc55c5bccdcd6871d80fd0': '7099325123bae7810db508727bb0bc7d',
+            	'c43c83acda60593d8e3607efd5010d7d': '526f4a760ef52ab85056fbc10ea27584',
+            	'712090aae2065c21951b170bc3002330': 'a97774e4175b80205c3cf104e9574208' 
+            }
+		  },  
+		  'arena2cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena2/default/index.mpd', 
+			drm: { 
+              	'c5e5ac1b3cc15fe790f1bc96535fe329': '3defe59c38079ccad25a436200ad3bd7',
+            	'b2f22f5d7ca35910a73fbabc524954de': 'd87d08fbe6505ad7099b8c258f396d15',
+            	'd256b403efcc5c3db701fc696885e102': 'd46e4215e279b224e9d2a772db9c74a1' 
+            }
+		  },  
+		  'arena3cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena3/default/index.mpd', 
+			drm: { 
+              	'3bedf4a896695958907e0984165090f0': 'a58317ffddf318f1540f31f67d95b5fb',
+            	'25c3df3202005cc98c47700295be59ca': '073f5a39d84dd14a9debd1a72bb1f055',
+            	'ccebefcba0a3546ba34d3fc587651708': '18f2b2027ce26867c23dcd7f57faa245' 
+            }
+		  },  
+		  'arena4cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena4/default/index.mpd', 
+			drm: { 
+              	'77ce6938c781526e999b688992f27764': 'bf1178841770fdba74f8629f0f06d2c0',
+            	'68cd661dbc8352fda000c532840f6340': '0255fb620f4f707ea7ba090058718306',
+            	'89d1dc54692e5b4fb5995fc0953bf5bf': '31b8953ab60b90fefc93d9bd1b806fbc' 
+            }
+		  },
+		  'arena5cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena5/default/index.mpd', 
+			drm: { 
+              	'34a709bbeac052f293c778c0770829fd': '2b801fde1ad4839d4080d6ec6b0ec4ce',
+            	'e473ec5d96f45a9f9a22eb665b5b1ea9': 'ace54ce15b69d249b00395c9e6b85b90',
+            	'18d3fba08f3152c38f14151219fa9792': '78b0c5b961351e482be81287466ecb08' 
+            }
+		  },
+		  'arena6cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena6/default/index.mpd', 
+			drm: { 
+              	'b3b60e79989a5b2799fa3a2394b8749f': 'a25d21e333dad3d131f126b7b57730be',
+            	'bfd8ff04a3625fcea8335c9575401697': '769d61a2d6fd7030a5088df2e70c2654',
+            	'5a86e42c58cf5d008546861c0f0fb22a': '67b1172a05bcb38a91a304d7098ce7f5' 
+            }
+		  },
+		  'arena7cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena7/default/index.mpd', 
+			drm: { 
+              	'5998265ef8fc5748822fef96229831aa': '9110b6be31b4bbdce67374bae3395269',
+            	'5d4b5005dbd355559b3c7fe4dae1fb05': '10e65a5b74158216190e654cdf05b584',
+            	'5244c72f4f5d5e1a8778fc93906c9cb3': '4c14a6a924ef7fb32534dd590d99d499' 
+            }
+		  },  
+		  'arena8cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena8/default/index.mpd', 
+			drm: { 
+              	'c6fc5b27b74e5b8e82ca19da484eb174': '51f8fd5eef736dccaea9235b621731e7',
+            	'b9e9546bc9ba52d1a75fba9222efa7f5': '2cec65c6b79be6c2d4481c6e0ef79bfc',
+            	'ca202ac1353a5c6b9960bdbb82f88efc': '7ef86abd9a62042858370852836c50b4' 
+            }
+		  }, 
+		  'arena9cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena9/default/index.mpd', 
+			drm: { 
+              	'91a56f5aab4c56cb88fbf787187acafe': '0000816079a5ec4f093e3274bda26f2a',
+            	'a2ff372a21b35653a88592abfec3f9a7': 'd5bc25088d1fda12849aad90716de750',
+            	'7ecfd12eb26258c381afadac16ac8fc9': 'b4f351533d633abf76cda47fe75d579b' 
+            }
+		  }, 
+		  'arena10cr': { 
+			url: 'https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/arena10/default/index.mpd', 
+			drm: { 
+              	'ee6860a6bf7a5f6c89bcf1794d16e25f': 'b573f718f1551d2cf2a335ca778f5604',
+            	'03ed75ef7e4c56cb8f81cc17952fc554': '2be3b8e9f4756601e5b263beb14c5908',
+            	'ea5736047df25edbb48bd055d48eb3dd': '8b40d3a415517224245a79e907cb8ef0' 
+            }
+		  },
+		  'sportsk1': { 
+			url: 'https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd', 
+			drm: { '11223344556677889900112233445566': '4b80724d0ef86bcb2c21f7999d67739d' }
+		  },	  
+		  'spoid1': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/SPOTV-HD/sa_dash_vmx/SPOTV-HD.mpd', 
+			drm: { '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7' }
+		  },
+		  'spoid2': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/SPOTV2-HD/sa_dash_vmx/SPOTV2-HD.mpd', 
+			drm: { '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7' }
+		  },
+		  'spo1my': { 
+			url: 'https://pop5clustera00de07172379a62d6189.hypp.tv/PLTV/88888888/224/3221227608/3221227608.mpd?rrsip=web.hypp.tv:443&zoneoffset=0&servicetype=1&icpid=&accounttype=1&limitflux=-1&limitdur=-1&accountinfo=U0v281lovZMLWzqtXjPtYuOXwQCoIQRk449J%2BBUCcawWP5a6lzyDPJ57LXeuC05Cs44sM6v4Pb96oLcepTGODErcymHBIhx5oJP4jv2fPK0%3D%3A20230206101724%3AUTC%2C1003663983%2C115.164.187.20%2C20230206101724%2Curn:Huawei:liveTV:XTV100000161%2C1003663983%2C-1%2C0%2C1%2C%2C%2C2%2C593%2C%2C%2C2%2C1343117%2C0%2C248412%2C47562943%2C%2C%2C2%2C1%2CEND&GuardEncType=2&it=H4sIAAAAAAAAADWOy27CMBRE_8ZLK3YehIVXIKRKVahE6Laa2NcmihODHZD695A2bGfmjM4coeljr1B2dV7Zqsu1LeoS2EhRk611tu2MFYYlujVBSabhfT-5JpgF-z7tfkTGMy6l4EKydrk7eLh12dzHjqLK39iJ4qPXpEyy_IHE4Vwkh7kPE__y-D1Hv04YtauaqDZltc0KKQuZs3lJW6Th1bAL0i6MV0Qyn8H9AcrCJ2JX6AGOGoykprv3_9wxmpfNEzpVq7L0AAAA&tenantId=6001', 
+			drm: { '7de0fa3c35f52f8a8517f1600dd11ed7': '2d59cf94d10020aeee01a97cd0716eea' }
+		  },
+		  'spo2my': { 
+			url: 'https://pop5clustera00de07172379a62d6189.hypp.tv/PLTV/88888888/224/3221227726/3221227726.mpd?rrsip=web.hypp.tv:443&zoneoffset=0&servicetype=1&icpid=&accounttype=1&limitflux=-1&limitdur=-1&accountinfo=U0v281lovZMLWzqtXjPtYuOXwQCoIQRk449J%2BBUCcawRjfkMvdAX9TZ5I%2BbsmfrUeOV6Zn1IaYCsVySN%2F6aTU0rcymHBIhx5oJP4jv2fPK0%3D%3A20230206102855%3AUTC%2C1003663983%2C115.164.187.20%2C20230206102855%2Curn:Huawei:liveTV:XTV100000162%2C1003663983%2C-1%2C0%2C1%2C%2C%2C2%2C593%2C%2C%2C2%2C1343117%2C0%2C248412%2C47562943%2C%2C%2C2%2C1%2CEND&GuardEncType=2&it=H4sIAAAAAAAAADWOwY6CMBiE36bHpi0I9tCTGxOTDbuJrFczhZ9KLNRt0cS3X1D2NpmZbzJTREOHD5PZwoqt0IXSXZ7JEnqWCp2WFhtlBUv0WwWjWAPv-9FVoV2w03F3loILrpTkUrF6mdt7uLVZ3QdL0WT_2JHio2_ItKnjDyQO5yI5TH0Y-bfH8yf6tcKoXq_JotwUWuSlyvOSTYtbI13nhF2QdmG4IVL7GdwLMB18InZDc4WjCgOZ8e79m_uK7fzmD_CkDoH0AAAA&tenantId=6001', 
+			drm: { '7c67cb7de9465062c06ac94e8e065462': '5931fc07f285ffe40eb98e130bb090f9' }
+		  },
+		  'tnt1': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/wf8usag51e/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd', 
+			drm: { 'ae26845bd33038a9c0774a0981007294': '63ac662dde310cfb4cc6f9b43b34196d' }
+		  },
+		  'tnt2': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/f0qvkrra8j/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd', 
+			drm: { '6d1708b185c6c4d7b37600520c7cc93c': '1aace05f58d8edef9697fd52cb09f441' }
+		  },
+		  'tnt3': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/lsdasbvglv/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd', 
+			drm: { '4e993aa8c1f295f8b94e8e9e6f6d0bfe': '86a1ed6e96caab8eb1009fe530d2cf4f' }
+		  },
+		  'tnt4': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/i2pcjr4pe5/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd', 
+			drm: { 'e31a5a81caff5d07ea2411a571fc2e59': '96c5ef69479732ae734f962748c19729' }
+		  },
+		  'tnt5': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/gesdwrdncn/out/v1/79e752f1eccd4e18b6a8904a0bc01f2d/cenc.mpd', 
+			drm: { '60c0d9b41475e01db4ffb91ed557fbcc': '36ee40e58948ca15e3caba8d47b8f34b' }
+		  },
+		  'fox1': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/oboxe53wyo/out/v1/f7892a9d706d419a846d738fa22ea33e/cenc.mpd', 
+			drm: { '2fbdaa3bea0d0323ae011b318d1db716': '8726ef7eaf5b9dce15fb6aa9f80bd53f' }
+		  },
+		  'fox2': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/tepjqej1ys/out/v1/c9c9159baee749a19612b1598495859a/cenc.mpd', 
+			drm: { '8836fb04d62dc64c9f8a39ef8640d5eb': 'd4f05ce56c5231b7cdf53455bea58621' }
+		  },
+		  'fox3': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/wybgz0orr8/out/v1/2f6d1612abd44f5883917f8a585b955f/cenc.mpd', 
+			drm: { '11c8c1c2ef0385cf1e64d44bb9c3a395': '5769730ffbdc4b2fd8945929d9ace063' }
+		  },
+		  'ad1': { 
+			url: 'https://uselector.cdn.intigral-ott.net/ADSP1/ADSP1.isml/manifest.mpd', 
+			drm: { 'eb5a3a48f3e191a00e3ac1e2d470c491': '2c8b7198563527e524d66628c092ef1f' }
+		  },
+		  'ad2': { 
+			url: 'https://uselector.cdn.intigral-ott.net/ADSP2/ADSP2.isml/manifest.mpd', 
+			drm: { 'efca93272b9d34f5cf9d8598f43be5ea': '55e5fe489e9c18f6c979c3126d4bcfed' }
+		  },
+		  'beinid1': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/BEIN01/sa_dash_vmx/BEIN01.mpd', 
+			drm: { '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7' }
+		  },
+		  'beinid2': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/BEIN02/sa_dash_vmx/BEIN02.mpd', 
+			drm: { '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7' }
+		  },
+		  'beinid3': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/BEIN03/sa_dash_vmx/BEIN03.mpd', 
+			drm: { '57d2ac9210cfbca3596cc679a01c8b29': 'd5e35c0f39c76adf24853d7ea18c71e7' }
+		  },
+		  'soccerchannel': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/soccerchannel-test/sa_dash_vmx/soccerchannel-test.mpd', 
+			drm: { '4d38060bf41b3c29df0ec950ece6b5da': '7ee9506b13480491d79b71c062ab5366' }
+		  },
+		  'sportstar1': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/MNCSports-HD/sa_dash_vmx/MNCSports-HD.mpd', 
+			drm: { '531c6d50e3e9f9ba66446f624f492289': 'd769d9ae238bdd424f8bcdcdc9a3801f' }
+		  },
+		  'sportstar2': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/MNCSports2-HD/sa_dash_vmx/MNCSports2-HD.mpd', 
+			drm: { '45fec91ce1f19b6b1f31d69dcfaaf6cd': '843e228ab109e9aa6c4822ee4ad05d7d' }
+		  },
+		  'usaceast': { 
+			url: 'https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(usa-east)/master.mpd', 
+			drm: { '91bf2d81b9e13701ac667915641121b8': 'd0cc2082132b430ad5a8bc4f31c9b772' }
+		  },
+		  'usacwest': { 
+			url: 'https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(usa-west)/master.mpd', 
+			drm: { '333962e3e1383529867a9a0e28a5e5d1': '5d3fcbed53749ee622ed0e64f31c1cbf' }
+		  },
+		  'peacock1': { 
+			url: 'https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd', 
+			drm: { '002046c9a49b9ab1cdb6616bec5d26c3': 'd2f92f6b7edc9a1a05d393ba0c20ef9e' }
+		  },
+		  'peacock2': { 
+			url: 'https://akam.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc1021n07j)/master.mpd', 
+			drm: { '002046c9a49b9ab1cdb6616bec5d26c3': 'd2f92f6b7edc9a1a05d393ba0c20ef9e' }
+		  },
+		  'peacockev1': { 
+			url: 'https://g003-sle-us-cmaf-prd-cf.cdn.peacocktv.com/co01/Content/CMAF_S2-CTR-4s-v2/Live/channel(5014728-716126-48f951faf5e)/master.mpd', 
+			drm: { '00220d4eb661ad9b3dd4c433439fc7ed': 'd41126e9a6530a58227e38e9665c1dce' }
+		  },
+		  'dazn1': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/bmnelo5c7a/out/v1/3ce2cdc4589f46189322bd3717c77957/cenc.mpd', 
+			drm: { '44dd9cd370b08a868ead115fe84ecfde': 'bff19ab0a51cf14e848389b152913fd0' }
+		  },
+		  'dazn2': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/xnk4m9bnxt/out/v1/4ced7b7329a54652b9bb0521ed38bd4d/cenc.mpd', 
+			drm: { '0eab5a3f3e3b4ba5d42d40ca30d17571': 'f3f061ded9b70e8160590d5802ecda6d' }
+		  },
+		  'dazn3': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/zy1ee5sshp/out/v1/bdcffa69fa3b4f3bb3569c9c73ee1c01/cenc.mpd', 
+			drm: { 'bad8efff688c0dbb3711e4a7114c22a3': '6ba800673b20776c0c850130d45e1920' }
+		  },
+		  'dazn4': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/up7qpwch9b/out/v1/a6d5d1a1287b4893b859c2d6ccf2c65d/cenc.mpd', 
+			drm: { 'd27104d427e4f87e75b19395a9f8796b': '723593c70e2d4c4862754398e80168f8' }
+		  },
+		  'daznla1': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/wjgklbtvhh/out/v1/659736a1e24c40e4865a80ffd75e7de7/cenc.mpd', 
+			drm: { '43d1c3b25207ff38b22ccfe17d302367': '7b1f85f6e81059473b114c16a25c829a' }
+		  },
+		  'daznla2': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/woujvkfnmn/out/v1/141b52f08a1e4e97850219729ee48dc8/cenc.mpd', 
+			drm: { '0b1fdeaee3ffc51e9a66cf1938d57aaf': '28e3cb88ab7b476b81ab8aa0624c4d71' }
+		  },
+		  'daznf1': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/cqbcvgkb83/out/v1/4dbe05ecfb1540448d82d68eeebfbb1c/cenc.mpd', 
+			drm: { '1061be12d303247426ec25e8369b2647': 'bd622b0e610295de3b0bccb850ccaaaa' }
+		  },
+		  'tel': { 
+			url: 'https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL1-CTR-4s/Live/channel(WSNS)/master.mpd', 
+			drm: { '7d6bb9f86e133e4cb33440b493b6b672': '584ad285dcb9e7d42cf3e93f1cc3fe11' }
+		  },
+		  'univ': { 
+			url: 'https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL1-CTR-4s/Live/channel(universo-east)/master.mpd', 
+			drm: { '232d71bb013d39ffb92ee8c576fb7e8e': '087408a48be8d57046c3868b37ea90ba' }
+		  },
+		  'daznpt1': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-054/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznpt2': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-055/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznpt3': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-056/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznpt4': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-057/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznpt5': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-058/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznpt6': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-059/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznde1': { 
+			url: 'https://otte.live.fly.ww.aiv-cdn.net/lhr-nitro/live/dash/enc/k2dcwnlpgr/out/v1/0502dc73a24b43a79c042bf2d14f6b84/cenc.mpd', 
+			drm: { '0c900a7eae0097e0977141b68c9bffc4': 'fa534e6d48eccf905a449051a5e280c8' }
+		  },
+		  'daznde2': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-018/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznde3': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-024/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'dazndef1': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-016/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznda1': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-036/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznda2': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-037/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznda3': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-038/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'daznfr1': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-048/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },  
+		  'daznligue1': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-046/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  }, 
+		  'playsports1': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-051/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },    
+		  'playsports2': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-052/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },  
+		  'playsports3': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-053/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },  
+		  'fuss': { 
+			url: 'https://daznzn.elutuna.workers.dev//dazn-linear-022/stream.mpd', 
+			drm: { '8ab47741930c476780515f9a00decb0a': '7ab4b9ae5a48aa526e511a913b832769' }
+		  },
+		  'rtlde': { 
+			url: 'https://pnowlive-a.akamaized.net/live/rtlhd/dash/rtlhd.mpd', 
+			drm: { '57e48b99f3f6d4f13f5c5afdcca084ca': '29379a5e2d3405fad2f5d9cbe92586c3' }
+		  },
+		  '2no': { 
+			url: 'https://ch11-hls-live.akamaized.net/out/u/433127.mpd', 
+			drm: { 'd12e4c9dc52f4cbab7ac9b2278317e47': 'a7987e5b6ec42db68a25486e108ca9f2' }
+		  },
+		  'nbc': { 
+			url: 'https://fsly.stream.peacocktv.com/Content/CMAF_OL1-CTR-4s/Live/channel(knbc)/master.mpd', 
+			drm: { '0045a118e231f1326bcdb45350b1ceaa': '8c13afbfa54ea37a368b8b859021f6e3' }
+		  },
+		  'sn360': { 
+			url: 'https://live-d-02-rogers-uw-prd.akamaized.net/out/v1/r-prd/ch-06-prd-r-v2/dash-ch-06-prd-r-hd/index.mpd', 
+			drm: { '27c0df9fa2e9314b8c49f824e1ff9d82': 'ff57bd34fde4c6022385879fe394dd6d' }
+		  },	
+		  'snpacific': { 
+			url: 'https://live-d-02-rogers-uw-prd.akamaized.net/out/v1/r-prd/ch-04-prd-r-v2/dash-ch-04-prd-r-hd/index.mpd', 
+			drm: { '7a565810c9cb35aca05476af10bffe05': 'b6759d6505a377dcec768a3ecb1cbad0' }
+		  },	
+		  'snone': { 
+			url: 'https://live-d-02-rogers-uw-prd.akamaized.net/out/v1/r-prd/ch-05-prd-r-v2/dash-ch-05-prd-r-hd/index.mpd', 
+			drm: { 'dbad1672b1bf3d0abd1c1c2161057f99': 'e1100c4e24f028d47a36ead37f0fd55f' }
+		  },	
+		  'sneast': { 
+			url: 'https://live-d-02-rogers-uw-prd.akamaized.net/out/v1/r-prd/ch-01-prd-r-v2/dash-ch-01-prd-r-hd/index.mpd', 
+			drm: { 'f0407787b4d83e5db9dbcd760aec17ce': '0f7c2736f496c2d2eccc9ebbe27799b9' }
+		  },  
+		  'mncsports': { 
+			url: 'https://av-ch-cdn.mncnow.id/live/eds/MNCSports2-HD/sa_dash_vmx/MNCSports2-HD.mpd', 
+			drm: { '45fec91ce1f19b6b1f31d69dcfaaf6cd': '843e228ab109e9aa6c4822ee4ad05d7d' }
+		  },
+		  'sgaff': { 
+			url: 'https://tglmp02.akamaized.net/out/v1/8c503a6966554d439035588f10505eee/manifest.mpd', 
+			drm: { '1b8ee3db17d34547983a2c3ddc3d28fc': 'fb5deb5f688fd67ec20c71191c7f4590' }
+		  },
+		  'sgaff2': { 
+			url: 'https://tglmp02.akamaized.net/out/v1/6e5a888d4bf847a2be521c55f7bfd08c/manifest.mpd?id=15', 
+			drm: { 'cdf0001f693942da990fe81afa3eb0cd': '6b8d4bc58615439954851eeda771f417' }
+		  },
+		  'espncol1': { 
+			url: 'https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(8757cb0a-3584-40cd-901e-8937c7deba83)/master.mpd', 
+			drm: { 'cb004fb100bd92f23793562891e3236b': 'b3e4e74ae2080b137e68bbd0ef8a7e05' }
+		  },
+		  'espncol2': { 
+			url: 'https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(62567d5c-295c-4ffd-ac7e-c9749e874884)/master.mpd', 
+			drm: { 'a81ee4a694fecd6aa8a682e5024b313c': '6d15568e1dab59e7202ae12e71505185' }
+		  },
+		  'espncol3': { 
+			url: 'https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(a38d1401-ee01-4802-812a-7cb460c9832c)/master.mpd', 
+			drm: { '8a60d7889ff126ee1895335e92254f8e': 'de1b0ce19fa804a1c473eb8ef2d5cf6d' }
+		  },
+		  'espncol4': { 
+			url: 'https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(9500bf02-0001-4199-a150-58dc5d692cca)/master.mpd', 
+			drm: { '54a2c11085c315ed6ff85c340a86095d': '5f0d10cf4a5c7e22e286b7e8cb4e79f4' }
+		  },
+		  'espncol5': { 
+			url: 'https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(80c74968-a2ef-4005-8661-045fe97408a8)/master.mpd', 
+			drm: { '4e126297fc7af35c736bdffe98eecaaa': 'fdb0091cf67d9c596dbfb07cf6f4c8f5' }
+		  },	
+		  'espncol6': { 
+			url: 'https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(b30aa51e-97fa-4354-bb38-871fb360e984)/master.mpd', 
+			drm: { 'f5836382452cdca1e1c8bf8b9a713534': '7d261930c3309ed2b06d2abb34a64410' }
+		  },
+		  'espncol7': { 
+			url: 'https://vcdn.mn10.entel.bo/Content/DASH/Live/Channel(5ab5db84-2235-4c10-9066-be9bc2ee087a)/master.mpd', 
+			drm: { '98ea1e32227adcd3618baac2bbf36814': '72a03a09d33e412f14a9bfa4ef24b542' }
+		  },	
+		  'espnnl1': { 
+			url: 'https://wp1-anp-g05060506-hzn-nl.t1.prd.dyncdn.dmdsdp.com/live/disk1/NL_000107_019441/go-dash-hdready-avc/NL_000107_019441.mpd?p=starballtv', 
+			drm: { '3e999e38253834baa63881ea451f2839': '99b88d9cde1d8986decbc5985da87187' }
+		  },
+		  'espnnl2': { 
+			url: 'https://wp2-anp-g05060506-hzn-nl.t1.prd.dyncdn.dmdsdp.com/live/disk1/NL_000108_019561/go-dash-hdready-avc/NL_000108_019561.mpd?p=starballtv', 
+			drm: { '3e999e38253834baa63881ea451f2839': '99b88d9cde1d8986decbc5985da87187' }
+		  },
+		  'espnnl3': { 
+			url: 'https://wp3-anp-g05060506-hzn-nl.t1.prd.dyncdn.dmdsdp.com/live/disk1/NL_000109_019464/go-dash-hdready-avc/NL_000109_019464.mpd?p=starballtv', 
+			drm: { '3e999e38253834baa63881ea451f2839': '99b88d9cde1d8986decbc5985da87187' }
+		  },
+		  'espnnl4': { 
+			url: 'https://wp4-anp-g05060506-hzn-nl.t1.prd.dyncdn.dmdsdp.com/live/disk1/NL_000110_019562/go-dash-hdready-avc/NL_000110_019562.mpd?p=starballtv', 
+			drm: { '3e999e38253834baa63881ea451f2839': '99b88d9cde1d8986decbc5985da87187' }
+		  },
+		  'ziggo1': { 
+			url: 'https://mag04.tvx.prd.tv.odido.nl/wh7f454c46tw75168188_-627298088/PLTV/86/224/3221241590/3221241590.mpd?accountinfo=~~V2.0~qbcsJh_jU5C9BcZc959e_wae44b4867b3417aa76b5db2da20fe46c~KZzTWjB8qD1zdgbJjRPVLJX-tV0qiN9RBHC_iseGrsmTSRjj06oGDtGlpSCRGOwF3626cf085c08d024c7e4aafc18c32440:UTC,', 
+			drm: { 'ef34ae91b4f2415e8439b2ad105e7488': '243248d8de1ff8c7c587ee2057317523' }
+		  },
+		  'ziggo2': { 
+			url: 'https://mag03.tvx.prd.tv.odido.nl/wh7f454c46tw266117884_-1972819316/PLTV/86/224/3221241560/3221241560.mpd?accountinfo=~~V2.0~OhA1DF4svOZppKxb-t-Ngw144cce44121c63284a33d5453493e5c8~1_Fmlu5PevHMYnEi9Z_HX2goKAd0VHSuxZMoIcAXcawYvG1meqGp2eQ2Ibhjvh7e59e7f6df3d57f23a32024ad67f0f19dc:UTC,', 
+			drm: { '3cfa8625f650406ebf6a4d1ea737f572': '0534e747c70b364aa7210e1bf3191df0' }
+		  },
+		  'ziggo3': { 
+			url: 'https://mag02.tvx.prd.tv.odido.nl/wh7f454c46tw407556707_-381738111/PLTV/86/224/3221241511/3221241511.mpd?accountinfo=~~V2.0~yVi0dMX4icO5Ka9e92EQfg8812e1c1044f7d357066472e3ee99ef4~2dRB9E-vDtoAbYl169LbcJpxUgWVJtbeU_PlhGfNUflphvljOb5VaEhxruETYG9qcccaf5c5b655bf7504ed7ec5a1dd798f:UTC,', 
+			drm: { '4dbea4b5713a4aa1ae3a2544cd522fc7': 'a8323ea99b2d6200a48e1bc27322d548' }
+		  },
+		  'ziggo4': { 
+			url: 'https://da-d436234920010b8800010302000000000000000b.id.cdn.upcbroadband.com/wp/wp4-anp-g05060506-hzn-nl.t1.prd.dyncdn.dmdsdp.com/live/disk1/NL_000097_019370/go-dash-fhd-avc/NL_000097_019370.mpd?p=web', 
+			drm: { '16bf72dc22743d929c4318e193408373': 'eae51a1e3904124963074cbf432c7c8e' }
+		  },
+		  'ziggo5': { 
+			url: 'https://mag04.tvx.prd.tv.odido.nl/wh7f454c46tw865586829_-819821292/PLTV/86/224/3221241610/3221241610.mpd?accountinfo=~~V2.0~LNS2PBO5tyhp5z1Pe6ObBA6cd7a4ec35c4492167b9376e6dff2932~BZw2dESHw-I1PQCFh9gGxCMvrIIzgMdYAe900qj8l6aoXUX9ahyR6I9EUIu7nDR4f4887615c83ea7a8cee6dd33137c4ebe:UTC,', 
+			drm: { '3fb40d85724942f994d86943f48021db': 'a6da8742502c8a2153067f5f2a70fb02' }
+		  },
+		  'ziggo6': { 
+			url: 'https://mag03.tvx.prd.tv.odido.nl/wh7f454c46tw1024019879_757686866/PLTV/86/224/3221241521/3221241521.mpd?accountinfo=~~V2.0~URnD_afuosWHfY5OEqRXOwfa01c8ac56cf4511de39c2c4a3cab278~iVxKjbtf2gx_dYFqI-vt5C4Cu3COYDjZaw6C_kO2T2wm30fwo1ctD1gr_e2PrgTh48867c3177f3c34842031623cb2e06c9:UTC,', 
+			drm: { '1a0ffa532aa2498490826e2f6a37f7c9': 'a8cec27bc7d47909c5b0d8f473b43e8d' }
+		  },
+		  'elevenpol1': { 
+			url: 'https://r.dcs.redcdn.pl/livedash/o2/tvnplayerncp/live/11/live.isml/playlist.mpd?indexMode=&dummyfile=&server_side_events=0&dvr=7200000', 
+			drm: { '3bdddc3ae3bb43b7a93d6ff72991e5dc': '9a1ca978d3bb5fe1300696f9683567eb' }
+		  },
+		  'elevenpol2': { 
+			url: 'https://r.dcs.redcdn.pl/livedash/o2/tvnplayerncp/live/11_sports/live.isml/playlist.mpd?indexMode=&dummyfile=&server_side_events=0&dvr=7200000', 
+			drm: { 'db4e84001a1e4fc3bf2612dc154dd75d': 'ad535148efdde938b29be16c9ab95134' }
+		  },
+		  'elevenpol3': { 
+			url: 'https://r.dcs.redcdn.pl/livedash/o2/tvnplayerncp/live/11_extra/live.isml/playlist.mpd?indexMode=&dummyfile=&server_side_events=0&dvr=7200000', 
+			drm: { '65c9e7e73a314bacb570514a605ea306': '91c84c5a2af36c16e20397da599a6e94' }
+		  },
+		  'elevenpol4': { 
+			url: 'https://r.dcs.redcdn.pl/livedash/o2/tvnplayerncp/live/eleven_sports_4_hd/live.isml/playlist.mpd?indexMode=&dummyfile=&server_side_events=0', 
+			drm: { '5288e6308fb45f5b89f3ece30b12b1b3': '106c98f71aa6a18fbd32da9d58859413' }
+		  },
+		  'tf1': { 
+			url: 'https://cachehsi1b.netplus.ch/live/eds/tf1hd/browser-dash/tf1hd.mpd', 
+			drm: { '': '' }
+		  },
+		  'setantalt1': { 
+			url: 'https://tr.live.cdn.cgates.lt/live/dash/561002/index.mpd', 
+			drm: { '8ab2332442854e62b0018eec3ee58484': '37fdee8b6eef5c96001e8c6fc47bfc08' }
+		  },
+		  'go31': { 
+			url: 'https://cdnlb.tvplayhome.lt/live/eds/TV3_Sport_HD_HVC/GO3_LIVE_DASH_AVC/TV3_Sport_HD_HVC.mpd', 
+			drm: { '610ad79e26a84fc782c987455e21a86b': 'd2d4acc6e79447b55f3f5c0267af06f5' }
+		  },
+		  'go32': { 
+			url: 'https://cdnlb.tvplayhome.lt/live/eds/TV3_Sport2_HD_HVC/GO3_LIVE_DASH_AVC/TV3_Sport2_HD_HVC.mpd', 
+			drm: { '3fc5ce88ae24460bafa447b53ab5f548': '476a55ef72c5e27e310668b1667da615' }
+		  },
+		  'go33': { 
+			url: 'https://cdnlb.tvplayhome.lt/live/eds/TV3_Sport3_HD_HVC/GO3_LIVE_DASH_AVC/TV3_Sport3_HD_HVC.mpd', 
+			drm: { 'a2a75672057f462089c2849b8184fcb0': '94899cace4911c617c27d8f878de2b43' }
+		  },
+		  'go3ex1': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP1/GO3_LIVE_DASH_AVC/VIP1.mpd', 
+			drm: { 'cf9689067bc0465593084d7832982fd1': '07454bafd70413ab57a3eb25de2c79c3' }
+		  },
+		  'go3ex2': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP2/GO3_LIVE_DASH_AVC/VIP2.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': 'dbb490040f3fece7959603e46e8314ab' }
+		  },
+		  'go3ex3': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP3/GO3_LIVE_DASH_AVC/VIP3.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': '37a8b1230dbeff0a11ce0af9bd3445e3' }
+		  },
+		  'go3ex4': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP4/GO3_LIVE_DASH_AVC/VIP4.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': '37a8b1230dbeff0a11ce0af9bd3445e3' }
+		  },
+		  'go3ex5': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP5/GO3_LIVE_DASH_AVC/VIP5.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': '9ddaf9c8b38abe57defaad198014d304' }
+		  },
+		  'go3ex6': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP6/GO3_LIVE_DASH_AVC/VIP6.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': '4c121e31f96db29124c3a40443acd6ed' }
+		  },
+		  'go3ex7': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP7/GO3_LIVE_DASH_AVC/VIP7.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': '37a8b1230dbeff0a11ce0af9bd3445e3' }
+		  },
+		  'go3ex8': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP8/GO3_LIVE_DASH_AVC/VIP8.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': 'dbb490040f3fece7959603e46e8314ab' }
+		  },
+		  'go3ex9': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP9/GO3_LIVE_DASH_AVC/VIP9.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': 'dbb490040f3fece7959603e46e8314ab' }
+		  },
+		  'go3ex10': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP10/GO3_LIVE_DASH_AVC/VIP10.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': 'dbb490040f3fece7959603e46e8314ab' }
+		  },
+		  'go3ex11': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP11/GO3_LIVE_DASH_AVC/VIP11.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': 'dbb490040f3fece7959603e46e8314ab' }
+		  },
+		  'go3ex12': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP12/GO3_LIVE_DASH_AVC/VIP12.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': 'dbb490040f3fece7959603e46e8314ab' }
+		  },
+		  'go3ex13': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP13/GO3_LIVE_DASH_AVC/VIP13.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': 'dbb490040f3fece7959603e46e8314ab' }
+		  },
+		  'go3ex14': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP14/GO3_LIVE_DASH_AVC/VIP14.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': '16e237d0bbd9a9b2cfd3a9a36f6323eb' }
+		  },
+		  'go3ex15': { 
+			url: 'https://cdn9.tvplayhome.lt/live/eds2/VIP15/GO3_LIVE_DASH_AVC/VIP15.mpd', 
+			drm: { 'ad206bf45075406da1ccfd824b4667c9': 'dbb490040f3fece7959603e46e8314ab' }
+		  },
+		  'ssc1': { 
+			url: 'https://ssc-1-enc.edgenextcdn.net/out/v1/c696e4819b55414388a1a487e8a45ca1/index.mpd',
+			drm: {
+				clearkey: {
+				keyId: 'd84c325f36814f39bbe59080272b10c3',
+				key: '550727de4c96ef1ecff874905493580f'
+				}
+			}
+		  },
+		  'ssc2': { 
+			url: 'https://ssc-2-enc.edgenextcdn.net/out/v1/a16db2ec338a445a82d9c541cc9293f9/index.mpd',
+			drm: {
+				clearkey: {
+				keyId: '8bcfc55359e24bd7ad1c5560a96ddd3c',
+				key: 'b5dcf721ab522af92a9d3bf0bd55b596'
+				}
+			}
+		  },
+		  'ssc3': { 
+			url: 'https://ssc-3-enc.edgenextcdn.net/out/v1/42e86125555242aaa2a12056832e7814/index.mpd',
+			drm: {
+				clearkey: {
+				keyId: '7de5dd08ad8041d586c2f16ccc9490a1',
+				key: '5e1503f3398b34f5099933fedab847ef'
+				}
+			}
+		  },
+		  'ssc4': { 
+			url: 'https://ssc-4-enc.edgenextcdn.net/out/v1/5267ea5772874b0db24559d643eaad93/index.mpd',
+			drm: {
+				clearkey: {
+				keyId: '5c672f6b85a94638872d0214f7806ed4',
+				key: 'bf8756fbb866ee2d5c701c2289dd8de3'
+				}
+			}
+		  },
+		  'ssc5': { 
+			url: 'https://ssc-5-enc.edgenextcdn.net/out/v1/99289eac5a7b4319905da595afbd792b/index.mpd',
+			drm: {
+				clearkey: {
+				keyId: 'c88b512b17ab4f6cb09eb0ff4a1056ed',
+				key: 'adc08ee1c20a734972a55c9aebbd1888'
+				}
+			}
+		  },
+		  'sscex1': { 
+			url: 'https://ssc-extra-1-enc.edgenextcdn.net/out/v1/647c58693f1d46af92bd7e69f17912cb/index.mpd',
+			drm: {
+				clearkey: {
+				keyId: 'ecbc9e6fe6b145efb6658fb5cf7427f8',
+				key: '03c17e28911f71221acbc0b11f900401'
+				}
+			}
+		  },
+		  'sscex2': { 
+			url: 'https://ssc-extra-2-enc.edgenextcdn.net/out/v1/8b70de2b70d447ba8a7450ba90926a2d/index.mpd',
+			drm: {
+				clearkey: {
+				keyId: '4d89249bd4ca4ebc9e70443265f9507d',
+				key: 'cf074ffd2646c9c2f8513b47fa57bc30'
+				}
+			}
+		  },
+		  'sscex3': { 
+			url: 'https://ssc-extra3-enc.edgenextcdn.net/out/v1/8f1c6c3f05ef4284a64b342891bd85ae/index.mpd',
+			drm: {
+				clearkey: {
+				keyId: '98cfd6fd4812497fb24dc75f7545f2ee',
+				key: 'd3006ee69e77b25939728ebf30d3180a'
+				}
+			}
+		  }
+		};
+
+        async function init() { 
+            const video = document.getElementById('video'); 
+            const ui = video['ui']; 
+            const controls = ui.getControls(); 
+            const player = controls.getPlayer(); 
+            window.player = player; 
+            window.ui = ui; 
+            player.addEventListener('error', onPlayerErrorEvent); 
+            controls.addEventListener('error', onUIErrorEvent); 
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const key = urlParams.get('channel');
+            if (channels[key]) {
+                const channel = channels[key];
+                if (channel.drm.clearkey) {
+                    player.configure({
+                        drm: {
+                            clearKeys: {
+                                [channel.drm.clearkey.keyId]: channel.drm.clearkey.key
+                            }
+                        }
+                    });
+                } else {
+                    player.configure({
+                        drm: {
+                            clearKeys: channel.drm
+                        }
+                    });
+                }
+                try {
+                    await player.load(channel.url); 
+                    console.log('The video has now been loaded!');
+                } catch (error) {
+                    onPlayerError(error);
+                }
+            } else {
+                console.error('Channel not found');
+            }
+
+            // Menambahkan listener untuk fullscreen
+            controls.addEventListener('fullscreen', () => {
+                if (document.fullscreenElement) {
+                    lockOrientationToLandscape();
+                }
+            });
+
+            // Konfigurasi warna seekBar menggunakan UI config
+            ui.configure({
+                seekBarColors: {
+                    base: 'rgba(255, 0, 0, 0.3)', // Warna latar belakang merah transparan
+                    buffered: 'rgba(255, 0, 0, 0.5)', // Warna buffer merah sedikit transparan
+                    played: 'red', // Warna bagian yang dimainkan
+                    adBreaks: 'yellow', // Warna untuk jeda iklan
+                }
+            });
+
+            // Ganti ikon menu dengan ikon gear
+            const menuButton = document.querySelector('.shaka-overflow-menu-button');
+            if (menuButton) {
+                menuButton.innerHTML = '<i class="fas fa-cog"></i>'; // Ikon gear dari Font Awesome
+            }
+        }
+
+        function onPlayerErrorEvent(errorEvent) { 
+            onPlayerError(event.detail);
+        }
+
+        function onPlayerError(error) {
+            console.error('Error code', error.code, 'object', error);
+        }
+
+        function onUIErrorEvent(errorEvent) { 
+            onPlayerError(event.detail);
+        }
+
+        function initFailed(errorEvent) {
+            console.error('Unable to load the UI library!');
+        }
+
+        function lockOrientationToLandscape() {
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape').catch((error) => {
+                    console.warn('Orientation lock failed:', error);
+                });
+            }
+        }
+
+        document.addEventListener('shaka-ui-loaded', init); 
+        document.addEventListener('shaka-ui-load-failed', initFailed); 
+		})();
