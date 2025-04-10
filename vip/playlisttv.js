@@ -557,3 +557,32 @@
                 menuButton.innerHTML = '<i class="fas fa-cog"></i>'; // Ikon gear dari Font Awesome
             }
         }
+
+        function onPlayerErrorEvent(errorEvent) { 
+            onPlayerError(event.detail);
+        }
+
+        function onPlayerError(error) {
+            console.error('Error code', error.code, 'object', error);
+        }
+
+        function onUIErrorEvent(errorEvent) { 
+            onPlayerError(event.detail);
+        }
+
+        function initFailed(errorEvent) {
+            console.error('Unable to load the UI library!');
+        }
+
+        function lockOrientationToLandscape() {
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape').catch((error) => {
+                    console.warn('Orientation lock failed:', error);
+                });
+            }
+        }
+
+        document.addEventListener('shaka-ui-loaded', init); 
+        document.addEventListener('shaka-ui-load-failed', initFailed); 
+
+		window.addEventListener('load', () => disableDevtool());
