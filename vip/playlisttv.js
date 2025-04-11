@@ -469,3 +469,13 @@
 			drm: { '98cfd6fd4812497fb24dc75f7545f2ee': 'd3006ee69e77b25939728ebf30d3180a' }
 		  }
 		};
+
+		//(function () {
+        //    const allowedHost = ['bikinbaru96.blogspot.com'];
+        //    const currentHost = window.location.hostname;
+
+        //    if (!allowedHost.includes(currentHost)) {
+        //        console.error('Access denied: Unauthorized host');
+        //        window.location.href = 'https://akusukagratisanlo.blogspot.com';
+        //        return;
+        //    }
