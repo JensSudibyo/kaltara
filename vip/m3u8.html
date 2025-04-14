@@ -119,13 +119,21 @@
         });
     </script>
     
-  <script>
-    try {
-      window.top.location.href;
-    } catch (e) {
-      document.body.innerHTML = '<div style="font-size:20px;color:red;text-align:center;margin-top:40px;">🚫 Website ini tidak dapat dibuka di iframe dengan sandbox.</div>';
-    }
-  </script>
+    <noscript>
+      <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:white;color:red;display:flex;align-items:center;justify-content:center;z-index:99999;font-size:20px;">
+        🚫 Website ini tidak dapat ditampilkan karena iframe menggunakan sandbox tanpa allow-scripts.
+      </div>
+    </noscript>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        try {
+          window.top.location.href;
+        } catch (e) {
+          document.body.innerHTML = '<div style="font-size:20px;color:red;text-align:center;margin-top:40px;">🚫 Website ini tidak dapat dibuka di iframe dengan sandbox.</div>';
+        }
+      });
+    </script>
     
 </body>
 </html>
