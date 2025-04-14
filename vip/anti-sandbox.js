@@ -1,9 +1,16 @@
 window.addEventListener('message', function(event) {
   if (event.data === 'checkSandbox') {
-    if (window.frameElement && window.frameElement.hasAttribute('sandbox')) {
+    let sandboxDetected = false;
+    try {
+      // Coba akses properti yang dibatasi oleh sandbox
+      window.top.location.href; // Ini akan gagal jika sandbox melarang navigasi
+    } catch (error) {
+      sandboxDetected = true;
+    }
+
+    if (sandboxDetected) {
       alert('Peringatan: Situs web ini di-embed dengan atribut sandbox.');
-      // Atau, Anda dapat mengambil tindakan lain, seperti mengalihkan halaman
-      // window.location.href = 'https://situs-web-anda.com/peringatan';
+      // Atau, lakukan tindakan lain
     }
   }
 });
