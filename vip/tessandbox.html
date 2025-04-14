@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Player M3U8</title>
+    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.6.0/dist/clappr.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@0.3.0/dist/level-selector.min.js"></script>
+    <meta name="referrer" content="no-referrer">
+    <script src="/histats.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #player {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        /* Menimpa gaya poster Clappr untuk menjaga proporsi */
+        .player-poster[data-poster] {
+            background-size: contain !important; /* Menjaga rasio aspek poster */
+            background-color: black !important; /* Warna latar belakang hitam */
+        }
+    </style>
+  
+  <script data-cfasync="false" type='text/javascript' src='//disappearsurgery.com/93/c9/e1/93c9e1602f4c05da2a587d287c363a0e.js'></script>
+      
+</head>
+<body>
+    <div id="player"></div>
+    <script>
+        // Daftar file M3U8 berdasarkan key
+        const videoSources = {
+<!-- Awal Data -->
+'btv': 'https://b1news.beritasatumedia.com/Beritasatu/B1News_manifest.m3u8',
+'sctv': 'https://op-group1-swiftservehd-1.dens.tv/h/h217/index.m3u8',
+'moji': 'https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8',
+'indosiar': 'https://op-group1-swiftservehd-1.dens.tv/h/h235/index.m3u8',
+'tvrisports': 'https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8',  
+'tvriworld': 'https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8', 
+'jowo': 'https://op-group1-swiftservehd-1.dens.tv/h/h208/index.m3u8', 
+'metrotv': 'https://op-group1-swiftservehd-1.dens.tv/h/h12/index.m3u8',
+'tvone': 'https://op-group1-swiftservehd-1.dens.tv/h/h40/index.m3u8',           
+'kplus': 'https://op-group1-swiftservehd-1.dens.tv/h/h08/01.m3u8',  
+'tennistv': 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8',
+'tennistv2': 'https://d3qg0hadt0dkov.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3sfgyrfz9zduo-prod/amgtennisus/playlist.m3u8',  
+'kompas': 'https://op-group1-swiftservehd-1.dens.tv/s/s104/index.m3u8', 
+'btv': 'https://op-group1-swiftservehd-1.dens.tv/h/h129/S4/mnf.m3u8', 
+'antv': 'https://op-group1-swiftservehd-1.dens.tv/s/s07/index.m3u8', 
+'mdtv': 'https://op-group1-swiftservesd-1.dens.tv/h/h06/index.m3u8', 
+'rtv': 'https://op-group1-swiftservehd-1.dens.tv/h/h10/index.m3u8', 
+<!-- Akhir Data -->
+        };
+
+        // Fungsi untuk mendapatkan parameter dari URL
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Ambil key dari URL
+        const videoKey = getQueryParameter('key');
+
+        // Tentukan file M3U8 berdasarkan key, gunakan sumber default jika key tidak ditemukan
+        const videoFile = videoSources[videoKey] || Object.values(videoSources)[0]; // Gunakan file pertama sebagai default
+
+        // Konfigurasi Clappr Player
+        var playerElement = document.getElementById("player");
+        var player = new Clappr.Player({
+            source: videoFile,
+            height: '100%',
+            width: '100%',
+            loop: false,
+            poster: 'https://www.streamkaltaraid.online/images/poster1.png', // Poster video
+            plugins: [LevelSelector],
+            mediacontrol: {
+                seekbar: '#014AFF',
+                buttons: '#FFF'
+            },
+            playback: {
+                hlsjsConfig: {
+                    startPosition: -1, // Selalu mulai dari posisi live terkini
+                }
+            },
+            mimeType: "application/x-mpegURL"
+        });
+        player.attachTo(playerElement);
+
+        // Fungsi untuk mengubah orientasi ke landscape saat fullscreen
+        player.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape').catch(function(error) {
+                    console.error('Orientation lock failed:', error);
+                });
+            }
+        });
+
+        // Kembalikan orientasi saat keluar dari fullscreen
+        player.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
+            if (screen.orientation && screen.orientation.unlock) {
+                screen.orientation.unlock();
+            }
+        });
+
+        // Event handling untuk error
+        player.on(Clappr.Events.PLAYER_ERROR, function() {
+            console.error('Error occurred while playing the video. Retrying...');
+            setTimeout(function() {
+                player.load({ source: videoFile });
+                player.play();
+            }, 5000); // Coba lagi setelah 5 detik
+        });
+    </script>
+    
+</body>
+</html>
