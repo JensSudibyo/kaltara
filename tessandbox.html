@@ -119,33 +119,46 @@
         });
     </script>
 
-<noscript>
-  <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:white;color:red;display:flex;align-items:center;justify-content:center;z-index:99999;font-size:20px;">
-    🚫 Website ini tidak dapat ditampilkan karena iframe menggunakan sandbox tanpa allow-scripts.
-  </div>
-</noscript>
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     let sandboxed = false;
 
     try {
-      // Akses ke properti parent akan error jika sandbox aktif
-      let test = window.parent.document.body.innerHTML;
+      // Deteksi localStorage block
+      localStorage.setItem("sandbox_test", "1");
+      localStorage.removeItem("sandbox_test");
     } catch (e) {
       sandboxed = true;
     }
 
-    // Optional: Tambahkan kondisi jika referrer kosong
+    try {
+      // postMessage test (tidak selalu error, tapi bisa dicoba)
+      window.parent.postMessage("sandbox-check", "*");
+    } catch (e) {
+      sandboxed = true;
+    }
+
+    // Check origin null
+    if (self.origin === "null") {
+      sandboxed = true;
+    }
+
+    // Optional fallback referrer
     if (!document.referrer) {
       sandboxed = true;
     }
 
     if (sandboxed) {
-      document.body.innerHTML = '<div style="font-size:20px;color:red;text-align:center;margin-top:40px;">🚫 Website ini tidak dapat dibuka karena iframe menggunakan sandbox (terdeteksi lewat parent context).</div>';
+      document.body.innerHTML = '<div style="font-size:20px;color:red;text-align:center;margin-top:40px;">🚫 Website ini tidak dapat dibuka karena iframe menggunakan sandbox (terdeteksi via heuristik runtime).</div>';
     }
   });
 </script>
+
+<noscript>
+  <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:white;color:red;display:flex;align-items:center;justify-content:center;z-index:99999;font-size:20px;">
+    🚫 Website ini tidak dapat ditampilkan karena iframe menggunakan sandbox tanpa allow-scripts.
+  </div>
+</noscript>
 
     
 </body>
