@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player</title>
+  	<title>Player</title>
     <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.6.0/dist/clappr.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@0.3.0/dist/level-selector.min.js"></script>
-    <script src="/histats.js"></script>
+  	<meta name="referrer" content="no-referrer">
+
     <style>
-        html, body {
+	        html, body {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -27,19 +28,59 @@
         .hidden {
             display: none;
         }
-        /* Menimpa gaya poster Clappr untuk menjaga proporsi */
         .player-poster[data-poster] {
-            background-size: contain !important; /* Menjaga rasio aspek poster */
-            background-color: black !important; /* Warna latar belakang hitam */
+            background-size: contain !important;
+            background-color: black !important;
+        }
+
+        /* New Loader Styles */
+        .loader-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #00fa9f;
+            z-index: 9999;
+        }
+
+        .loader {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: block;
+            margin: 15px auto;
+            position: relative;
+            color: #FFF;
+            left: -100px;
+            box-sizing: border-box;
+            animation: shadowRolling 2s linear infinite;
+        }
+
+        @keyframes shadowRolling {
+            0% { box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0); }
+            12% { box-shadow: 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0); }
+            25% { box-shadow: 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0); }
+            36% { box-shadow: 120px 0 white, 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0); }
+            50% { box-shadow: 130px 0 white, 120px 0 white, 110px 0 white, 100px 0 white; }
+            62% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white, 110px 0 white; }
+            75% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white; }
+            87% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white; }
+            100% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0); }
         }
     </style>
-
-    <!--<script data-cfasync="false" type='text/javascript' src='//disappearsurgery.com/93/c9/e1/93c9e1602f4c05da2a587d287c363a0e.js'></script>-->
+  
     <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
-	
+    <script data-cfasync="false" type='text/javascript' src='//disappearsurgery.com/93/c9/e1/93c9e1602f4c05da2a587d287c363a0e.js'></script>
+  
 </head>
 <body>
-	
+    <!-- Loader -->
+    <div id="loaderContainer" class="loader-container hidden">
+        <div class="loader"></div>
+        <div>Comeback later</div>
+    </div>
+
     <!-- Container untuk Clappr Player -->
     <div id="player" class="hidden"></div>
 
@@ -50,110 +91,99 @@
     </iframe>
 
     <script>
-        // Daftar sumber video (tanpa perlu menentukan tipe)
         const sources = {
-<!-- Awal Data -->
-<!-- Akhir Data -->
+        <!-- Awal Data -->
+		<!-- Akhir Data -->
         };
 
-        // URL Default jika key tidak memiliki URL
-        const defaultM3U8 = 'https://www.streamkaltaraid.online/nostreams.m3u8';
-
-        // Fungsi untuk mendapatkan parameter dari URL
         function getQueryParameter(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
         }
 
-        // Ambil parameter `key` dari URL
         const videoKey = getQueryParameter('key');
-        let videoUrl = sources[videoKey];
 
-        // Jika URL kosong atau tidak ditemukan, gunakan default M3U8
-        let isDefaultM3U8 = false;
-        if (!videoUrl) {
-            videoUrl = defaultM3U8;
-            isDefaultM3U8 = true; // Menandai bahwa video yang diputar adalah default
+        // Cek jika key tidak ada atau tidak valid
+        if (!videoKey || !sources[videoKey]) {
+            document.getElementById('loaderContainer').classList.remove('hidden');
+            document.getElementById('player').classList.add('hidden');
+            document.getElementById('videoIframe').classList.add('hidden');
+            throw new Error('Invalid or missing video key'); // Hentikan eksekusi
         }
 
-        if (videoUrl.includes('.m3u8')) { 
-            // Tampilkan Clappr Player untuk M3U8
-            document.getElementById('player').classList.remove('hidden');
+        const videoUrl = sources[videoKey];
+      
+        // Tambahkan meta referrer jika domain termasuk dalam daftar
+        (function () {
+            const noReferrerKeywords = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso'];
 
-            // Konfigurasi player
+            const url = document.createElement('a');
+            url.href = videoUrl;
+
+            // Cek apakah salah satu keyword cocok dengan domain
+            const isMatch = noReferrerKeywords.some(keyword => url.hostname.includes(keyword));
+
+            if (isMatch) {
+                const meta = document.createElement('meta');
+                meta.name = 'referrer';
+                meta.content = 'no-referrer';
+                document.head.appendChild(meta);
+            }
+        })();
+
+        if (videoUrl.includes('.m3u8')) {
+            document.getElementById('player').classList.remove('hidden');
+            
             var playerOptions = {
                 source: videoUrl,
                 height: '100%',
                 width: '100%',
-                loop: isDefaultM3U8, // Loop hanya jika defaultM3U8
-                autoPlay: isDefaultM3U8, // Autoplay hanya jika defaultM3U8
+                poster: 'https://www.streamkaltaraid.online/images/poster1.png',
                 plugins: [LevelSelector],
                 mediacontrol: { seekbar: '#014AFF', buttons: '#FFF' },
                 playback: { hlsjsConfig: { startPosition: -1 } },
                 mimeType: "application/x-mpegURL"
             };
 
-            // Hanya tambahkan poster jika BUKAN default M3U8
-            if (!isDefaultM3U8) {
-                playerOptions.poster = 'https://www.streamkaltaraid.online/images/poster1.png';
-            }
-
             var player = new Clappr.Player(playerOptions);
             player.attachTo(document.getElementById("player"));
 
-            // Fungsi untuk mengubah orientasi ke landscape saat fullscreen
             player.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
-                if (screen.orientation && screen.orientation.lock) {
-                    screen.orientation.lock('landscape').catch(function(error) {
-                        console.error('Orientation lock failed:', error);
-                    });
+                if (screen.orientation?.lock) {
+                    screen.orientation.lock('landscape').catch(console.error);
                 }
             });
 
-            // Kembalikan orientasi saat keluar dari fullscreen
             player.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
-                if (screen.orientation && screen.orientation.unlock) {
+                if (screen.orientation?.unlock) {
                     screen.orientation.unlock();
                 }
             });
 
-            // Event handling untuk error dan mencoba ulang pemutaran video
             player.on(Clappr.Events.PLAYER_ERROR, function() {
-                console.error('Error occurred while playing the video. Retrying...');
-                setTimeout(function() {
+                console.error('Error occurred. Retrying...');
+                setTimeout(() => {
                     player.load({ source: videoUrl });
                     player.play();
                 }, 5000);
             });
 
         } else {
-            // Tampilkan Iframe untuk selain M3U8
             document.getElementById('videoIframe').classList.remove('hidden');
-
-            // Daftar domain yang dikecualikan dari sandbox
-            const excludedDomains = ['voodc.com', 'www.vidembed.re', 'streamtp3.com'];
-
-            // Buat link element untuk mendapatkan hostname dari URL
+            
+            const excludedDomains = ['embedstreams.top', 'embedme.top', 'streamsvv1.su'];
             const link = document.createElement('a');
             link.href = videoUrl;
 
-            // Periksa apakah URL termasuk domain yang dikecualikan
             if (excludedDomains.includes(link.hostname)) {
-                // Hapus atribut sandbox untuk domain tertentu
                 document.getElementById('videoIframe').removeAttribute('sandbox');
-            } else {
-                // Terapkan sandbox untuk domain lainnya
-                document.getElementById('videoIframe').setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
             }
-
+            
             document.getElementById('videoIframe').src = videoUrl;
         }
 
-        window.addEventListener('load', function() {
-            disableDevtool();
-        });
-	   
+        window.addEventListener('load', () => disableDevtool());
+      
     </script>
-	
 </body>
 </html>
