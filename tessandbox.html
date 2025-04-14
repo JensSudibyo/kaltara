@@ -119,7 +119,7 @@
         });
     </script>
 
- <noscript>
+<noscript>
   <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:white;color:red;display:flex;align-items:center;justify-content:center;z-index:99999;font-size:20px;">
     🚫 Website ini tidak dapat ditampilkan karena iframe menggunakan sandbox tanpa allow-scripts.
   </div>
@@ -127,13 +127,26 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    let sandboxed = false;
+
     try {
-      window.top.location.href;
+      // Akses ke properti parent akan error jika sandbox aktif
+      let test = window.parent.document.body.innerHTML;
     } catch (e) {
-      document.body.innerHTML = '<div style="font-size:20px;color:red;text-align:center;margin-top:40px;">🚫 Website ini tidak dapat dibuka di iframe dengan sandbox.</div>';
+      sandboxed = true;
+    }
+
+    // Optional: Tambahkan kondisi jika referrer kosong
+    if (!document.referrer) {
+      sandboxed = true;
+    }
+
+    if (sandboxed) {
+      document.body.innerHTML = '<div style="font-size:20px;color:red;text-align:center;margin-top:40px;">🚫 Website ini tidak dapat dibuka karena iframe menggunakan sandbox (terdeteksi lewat parent context).</div>';
     }
   });
 </script>
+
     
 </body>
 </html>
