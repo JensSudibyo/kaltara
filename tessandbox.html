@@ -1,144 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Video Player M3U8</title>
-    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.6.0/dist/clappr.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@0.3.0/dist/level-selector.min.js"></script>
-    <meta name="referrer" content="no-referrer">
-    <script src="/histats.js"></script>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: black;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Live Channel Viewer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/controls.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        #player {
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-        /* Menimpa gaya poster Clappr untuk menjaga proporsi */
-        .player-poster[data-poster] {
-            background-size: contain !important; /* Menjaga rasio aspek poster */
-            background-color: black !important; /* Warna latar belakang hitam */
-        }
-    </style>
-  
-  <script data-cfasync="false" type='text/javascript' src='//disappearsurgery.com/93/c9/e1/93c9e1602f4c05da2a587d287c363a0e.js'></script>
-      
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    #channel-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 16px;
+      background: #111;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .channel-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1a1a1a;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .channel-name {
+      font-weight: 600;
+      color: white;
+      flex: 1;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    .channel-card button {
+      padding: 4px 10px;
+      font-size: 13px;
+      background: crimson;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #video-player-container {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      z-index: 9999;
+    }
+
+    .shaka-video-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .shaka-video {
+      width: 100%;
+      height: 100%;
+    }
+
+    #back-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      z-index: 1000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    @media only screen and (max-width: 768px) and (pointer: coarse) {
+    #video-player-container {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: auto;
+      background: black;
+      z-index: 9999;
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="player"></div>
-    <script>
-        // Daftar file M3U8 berdasarkan key
-        const videoSources = {
-<!-- Awal Data -->
-'btv': 'https://b1news.beritasatumedia.com/Beritasatu/B1News_manifest.m3u8',
-'sctv': 'https://op-group1-swiftservehd-1.dens.tv/h/h217/index.m3u8',
-'moji': 'https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8',
-'indosiar': 'https://op-group1-swiftservehd-1.dens.tv/h/h235/index.m3u8',
-'tvrisports': 'https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8',  
-'tvriworld': 'https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8', 
-'jowo': 'https://op-group1-swiftservehd-1.dens.tv/h/h208/index.m3u8', 
-'metrotv': 'https://op-group1-swiftservehd-1.dens.tv/h/h12/index.m3u8',
-'tvone': 'https://op-group1-swiftservehd-1.dens.tv/h/h40/index.m3u8',           
-'kplus': 'https://op-group1-swiftservehd-1.dens.tv/h/h08/01.m3u8',  
-'tennistv': 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8',
-'tennistv2': 'https://d3qg0hadt0dkov.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3sfgyrfz9zduo-prod/amgtennisus/playlist.m3u8',  
-'kompas': 'https://op-group1-swiftservehd-1.dens.tv/s/s104/index.m3u8', 
-'btv': 'https://op-group1-swiftservehd-1.dens.tv/h/h129/S4/mnf.m3u8', 
-'antv': 'https://op-group1-swiftservehd-1.dens.tv/s/s07/index.m3u8', 
-'mdtv': 'https://op-group1-swiftservesd-1.dens.tv/h/h06/index.m3u8', 
-'rtv': 'https://op-group1-swiftservehd-1.dens.tv/h/h10/index.m3u8', 
-<!-- Akhir Data -->
-        };
 
-        // Fungsi untuk mendapatkan parameter dari URL
-        function getQueryParameter(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
-        }
+  <div id="channel-grid"></div>
 
-        // Ambil key dari URL
-        const videoKey = getQueryParameter('key');
+  <div id="video-player-container">
+    <div data-shaka-player-container class="shaka-video-container">
+      <button id="back-button" onclick="window.location.href='https://bikinbaru96.blogspot.com/2025/04/video-player-html-body-margin-0-padding.html'">← Kembali</button>
+      <video autoplay muted playsinline data-shaka-player id="video" class="shaka-video" poster="https://www.streamkaltaraid.online/images/poster1.png"></video>
+    </div>
+  </div>
 
-        // Tentukan file M3U8 berdasarkan key, gunakan sumber default jika key tidak ditemukan
-        const videoFile = videoSources[videoKey] || Object.values(videoSources)[0]; // Gunakan file pertama sebagai default
-
-        // Konfigurasi Clappr Player
-        var playerElement = document.getElementById("player");
-        var player = new Clappr.Player({
-            source: videoFile,
-            height: '100%',
-            width: '100%',
-            loop: false,
-            poster: 'https://www.streamkaltaraid.online/images/poster1.png', // Poster video
-            plugins: [LevelSelector],
-            mediacontrol: {
-                seekbar: '#014AFF',
-                buttons: '#FFF'
-            },
-            playback: {
-                hlsjsConfig: {
-                    startPosition: -1, // Selalu mulai dari posisi live terkini
-                }
-            },
-            mimeType: "application/x-mpegURL"
-        });
-        player.attachTo(playerElement);
-
-        // Fungsi untuk mengubah orientasi ke landscape saat fullscreen
-        player.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
-            if (screen.orientation && screen.orientation.lock) {
-                screen.orientation.lock('landscape').catch(function(error) {
-                    console.error('Orientation lock failed:', error);
-                });
-            }
-        });
-
-        // Kembalikan orientasi saat keluar dari fullscreen
-        player.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
-            if (screen.orientation && screen.orientation.unlock) {
-                screen.orientation.unlock();
-            }
-        });
-
-        // Event handling untuk error
-        player.on(Clappr.Events.PLAYER_ERROR, function() {
-            console.error('Error occurred while playing the video. Retrying...');
-            setTimeout(function() {
-                player.load({ source: videoFile });
-                player.play();
-            }, 5000); // Coba lagi setelah 5 detik
-        });
-    </script>
-<script>
-  (function() {
-    try {
-      if (window.top === window.self) {
-        // Bukan dalam iframe
-        return;
+  <script>
+    const channels = {
+      'RCTI': {
+        url: 'https://av-ch-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd',
+        drm: { '9ba3e153ef8956d6e2b0684fcf74f58f': 'dbc28cb5c6426080f984a5b6d436bb30' }
+      },
+      'SSCeX3': {
+        url: 'https://ssc-extra3-enc.edgenextcdn.net/out/v1/8f1c6c3f05ef4284a64b342891bd85ae/index.mpd',
+        drm: { '98cfd6fd4812497fb24dc75f7545f2ee': 'd3006ee69e77b25939728ebf30d3180a' }
       }
-      try {
-        // Coba akses properti dari window.top
-        const test = window.top.location.href;
-        // Jika berhasil, iframe tidak sandboxed
-        console.log("Iframe normal (tidak sandbox)");
-      } catch (e) {
-        // Jika terjadi error, kemungkinan iframe sandboxed
-        alert("⚠️ Halaman ini berjalan di dalam iframe dengan sandbox!");
-        document.body.innerHTML = "<h1 style='color:red;text-align:center;'>Sandboxed Iframe Diblokir</h1>";
+    };
+
+    let player;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const selected = params.get('channel');
+
+      if (selected && channels[selected]) {
+        document.getElementById('video-player-container').style.display = 'block';
+      } else {
+        buildChannelGrid();
       }
-    } catch (e) {
-      console.error("Gagal mendeteksi sandbox:", e);
+    });
+
+    document.addEventListener('shaka-ui-loaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const selected = params.get('channel');
+      if (selected && channels[selected]) {
+        initPlayer(selected);
+      }
+    });
+
+    function buildChannelGrid() {
+      const grid = document.getElementById('channel-grid');
+      Object.keys(channels).forEach(name => {
+        const card = document.createElement('div');
+        card.className = 'channel-card';
+        card.innerHTML = `
+          <div class="channel-name">${name}</div>
+          <button onclick="redirectTo('${name}')">TONTON</button>
+        `;
+        grid.appendChild(card);
+      });
     }
-  })();
-</script>
+
+    function redirectTo(channel) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('channel', channel);
+      window.location.href = url.toString();
+    }
+
+    async function initPlayer(channelKey) {
+      const video = document.getElementById('video');
+      const ui = video['ui'];
+      const controls = ui.getControls();
+      player = controls.getPlayer();
+
+      const channel = channels[channelKey];
+
+      player.configure({
+        streaming: {
+          startAtSegmentBoundary: true,
+          ignoreTextStreamFailures: true,
+          rebufferingGoal: 1,
+          bufferingGoal: 3,
+          bufferBehind: 5,
+          autoLowLatencyMode: true,
+          lowLatencyMode: true
+        },
+        manifest: {
+          dash: {
+            ignoreMinBufferTime: true,
+            autoCorrectDrift: true
+          }
+        }
+      });
+
+      if (channel.drm) {
+        player.configure({
+          drm: { clearKeys: channel.drm }
+        });
+      }
+
+      try {
+        await player.load(channel.url);
+        await video.play();
+        console.log(`Playing ${channelKey}`);
+      } catch (err) {
+        console.error('Playback error:', err);
+      }
+    }
+
+    // Optional: Force rotate on fullscreen
+    document.addEventListener('fullscreenchange', () => {
+      if (document.fullscreenElement && screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock('landscape').catch(err => {
+          console.warn("Gagal rotasi otomatis:", err);
+        });
+      }
+    });
+  </script>
 </body>
 </html>
