@@ -119,23 +119,26 @@
         });
     </script>
 <script>
-  try {
-    if (window.top === window.self) {
-      console.log("Bukan dalam iframe");
-    } else {
+  (function() {
+    try {
+      if (window.top === window.self) {
+        // Bukan dalam iframe
+        return;
+      }
       try {
-        // Akses top location, akan error jika sandboxed
-        window.top.location.href;
+        // Coba akses properti dari window.top
+        const test = window.top.location.href;
+        // Jika berhasil, iframe tidak sandboxed
         console.log("Iframe normal (tidak sandbox)");
       } catch (e) {
-        alert("⚠️ Dilarang menampilkan website ini dalam iframe sandbox!");
-        document.body.innerHTML = "<h1 style='color:red;text-align:center;'>Akses sandbox diblokir!</h1>";
+        // Jika terjadi error, kemungkinan iframe sandboxed
+        alert("⚠️ Halaman ini berjalan di dalam iframe dengan sandbox!");
+        document.body.innerHTML = "<h1 style='color:red;text-align:center;'>Sandboxed Iframe Diblokir</h1>";
       }
+    } catch (e) {
+      console.error("Gagal mendeteksi sandbox:", e);
     }
-  } catch (e) {
-    console.error("Deteksi sandbox gagal:", e);
-  }
-</script>
+  })();
 </script>
 </body>
 </html>
