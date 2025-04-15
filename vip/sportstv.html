@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Live Channel Viewer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/controls.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    #channel-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 16px;
+      background: #111;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .channel-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1a1a1a;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .channel-name {
+      font-weight: 600;
+      color: white;
+      flex: 1;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    .channel-card button {
+      padding: 4px 10px;
+      font-size: 13px;
+      background: crimson;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #video-player-container {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      z-index: 9999;
+    }
+
+    .shaka-video-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .shaka-video {
+      width: 100%;
+      height: 100%;
+    }
+
+    #back-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 5px;
+      z-index: 1000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    @media only screen and (max-width: 768px) and (pointer: coarse) {
+    #video-player-container {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: auto;
+      background: black;
+      z-index: 9999;
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div id="channel-grid"></div>
+
+  <div id="video-player-container">
+    <div data-shaka-player-container class="shaka-video-container">
+      <button id="back-button" onclick="window.location.href='https://bikinbaru96.blogspot.com/2025/04/video-player-html-body-margin-0-padding.html'">← Kembali</button>
+      <video autoplay muted playsinline data-shaka-player id="video" class="shaka-video" poster="https://www.streamkaltaraid.online/images/poster1.png"></video>
+    </div>
+  </div>
+
+  <script>
+    const channels = {
+      'RCTI': {
+        url: 'https://av-ch-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd',
+        drm: { '9ba3e153ef8956d6e2b0684fcf74f58f': 'dbc28cb5c6426080f984a5b6d436bb30' }
+      },
+      'SSCeX3': {
+        url: 'https://ssc-extra3-enc.edgenextcdn.net/out/v1/8f1c6c3f05ef4284a64b342891bd85ae/index.mpd',
+        drm: { '98cfd6fd4812497fb24dc75f7545f2ee': 'd3006ee69e77b25939728ebf30d3180a' }
+      }
+    };
+
+    let player;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const selected = params.get('channel');
+
+      if (selected && channels[selected]) {
+        document.getElementById('video-player-container').style.display = 'block';
+      } else {
+        buildChannelGrid();
+      }
+    });
+
+    document.addEventListener('shaka-ui-loaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const selected = params.get('channel');
+      if (selected && channels[selected]) {
+        initPlayer(selected);
+      }
+    });
+
+    function buildChannelGrid() {
+      const grid = document.getElementById('channel-grid');
+      Object.keys(channels).forEach(name => {
+        const card = document.createElement('div');
+        card.className = 'channel-card';
+        card.innerHTML = `
+          <div class="channel-name">${name}</div>
+          <button onclick="redirectTo('${name}')">TONTON</button>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function redirectTo(channel) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('channel', channel);
+      window.location.href = url.toString();
+    }
+
+    async function initPlayer(channelKey) {
+      const video = document.getElementById('video');
+      const ui = video['ui'];
+      const controls = ui.getControls();
+      player = controls.getPlayer();
+
+      const channel = channels[channelKey];
+
+      player.configure({
+        streaming: {
+          startAtSegmentBoundary: true,
+          ignoreTextStreamFailures: true,
+          rebufferingGoal: 1,
+          bufferingGoal: 3,
+          bufferBehind: 5,
+          autoLowLatencyMode: true,
+          lowLatencyMode: true
+        },
+        manifest: {
+          dash: {
+            ignoreMinBufferTime: true,
+            autoCorrectDrift: true
+          }
+        }
+      });
+
+      if (channel.drm) {
+        player.configure({
+          drm: { clearKeys: channel.drm }
+        });
+      }
+
+      try {
+        await player.load(channel.url);
+        await video.play();
+        console.log(`Playing ${channelKey}`);
+      } catch (err) {
+        console.error('Playback error:', err);
+      }
+    }
+
+    // Optional: Force rotate on fullscreen
+    document.addEventListener('fullscreenchange', () => {
+      if (document.fullscreenElement && screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock('landscape').catch(err => {
+          console.warn("Gagal rotasi otomatis:", err);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
