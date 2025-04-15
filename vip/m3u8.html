@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player</title>
-    <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.6.0/dist/clappr.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@0.3.0/dist/level-selector.min.js"></script>
     <script src="/histats.js"></script>
 
     <style>
-        html, body {
+	        html, body {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -16,33 +17,7 @@
             overflow: hidden;
             background-color: black;
         }
-        
-        .jw-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        .jw-video-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .jwplayer {
-            width: 100%;
-            height: auto;
-            max-height: 100%;
-            background-color: black;
-        }
-
-        .jw-refresh-btn {
-            filter: drop-shadow(0 0 1px rgba(255,255,255,0.7));
-        }
-
-        #videoIframe {
+        #player, #videoIframe {
             position: fixed;
             top: 0;
             left: 0;
@@ -50,12 +25,15 @@
             height: 100%;
             border: 0;
         }
-
         .hidden {
             display: none;
         }
+        .player-poster[data-poster] {
+            background-size: contain !important;
+            background-color: black !important;
+        }
 
-        /* Loader Styles */
+        /* New Loader Styles */
         .loader-container {
             position: fixed;
             top: 50%;
@@ -91,10 +69,10 @@
             100% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0); }
         }
     </style>
-
+  
     <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
     <script data-cfasync="false" type='text/javascript' src='//disappearsurgery.com/93/c9/e1/93c9e1602f4c05da2a587d287c363a0e.js'></script>
-	
+  
 </head>
 <body>
     <!-- Loader -->
@@ -103,10 +81,8 @@
         <div>Comeback later</div>
     </div>
 
-    <!-- JW Player Container -->
-    <div class="jw-wrapper hidden" id="jwContainer">
-        <div id="player" class="jw-video-container"></div>
-    </div>
+    <!-- Container untuk Clappr Player -->
+    <div id="player" class="hidden"></div>
 
     <!-- Container untuk Iframe -->
     <iframe id="videoIframe" class="hidden" src="" frameborder="0" allowfullscreen scrolling="no"
@@ -115,8 +91,6 @@
     </iframe>
 
     <script>
-        jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-        
         const sources = {
 <!-- Awal Data -->
 'rcti': 'https://sindikasi.inews.id/embed/video/YWdlbnQ9ZGVza3RvcCZ1cmw9aHR0cHMlM0ElMkYlMkZlbWJlZC5yY3RpcGx1cy5jb20lMkZsaXZlJTJGcmN0aSUyRmluZXdzaWQmaGVpZ2h0PTEwMCUyNSZ3aWR0aD0xMDAlMjU=',
@@ -146,79 +120,84 @@
         };
 
         function getQueryParameter(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
         }
 
         const videoKey = getQueryParameter('key');
-        const videoUrl = sources[videoKey];
 
+        // Cek jika key tidak ada atau tidak valid
         if (!videoKey || !sources[videoKey]) {
             document.getElementById('loaderContainer').classList.remove('hidden');
-            throw new Error('Invalid or missing video key');
+            document.getElementById('player').classList.add('hidden');
+            document.getElementById('videoIframe').classList.add('hidden');
+            throw new Error('Invalid or missing video key'); // Hentikan eksekusi
         }
 
-        // Handle referrer policy
+        const videoUrl = sources[videoKey];
+      
+        // Tambahkan meta referrer jika domain termasuk dalam daftar
         (function () {
             const noReferrerKeywords = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso', 'sindikasi.inews', 'op-group1-swiftservehd-1.dens', 'video.detik'];
-            const url = new URL(videoUrl);
-            
-            if (noReferrerKeywords.some(keyword => url.hostname.includes(keyword))) {
-                document.head.innerHTML += '<meta name="referrer" content="no-referrer">';
+
+            const url = document.createElement('a');
+            url.href = videoUrl;
+
+            // Cek apakah salah satu keyword cocok dengan domain
+            const isMatch = noReferrerKeywords.some(keyword => url.hostname.includes(keyword));
+
+            if (isMatch) {
+                const meta = document.createElement('meta');
+                meta.name = 'referrer';
+                meta.content = 'no-referrer';
+                document.head.appendChild(meta);
             }
         })();
 
-        // Inisialisasi Player
         if (videoUrl.includes('.m3u8')) {
-            document.getElementById('jwContainer').classList.remove('hidden');
+            document.getElementById('player').classList.remove('hidden');
             
-            const playerInstance = jwplayer("player").setup({
-                playlist: [{
-                    file: videoUrl,
-                    image: 'https://kltraid.pages.dev/images/poster.png',
-                    type: "hls",
-                    label: "HD"
-                }],
-                width: "100%",
-                aspectratio: "16:9",
-                autostart: false,
-                mute: false,
-                stretching: "uniform",
-                playsinline: true,
-                logo: { file: '' },
-                cast: {},
-                sharing: false
+            var playerOptions = {
+                source: videoUrl,
+                height: '100%',
+                width: '100%',
+                poster: 'https://www.streamkaltaraid.online/images/poster1.png',
+                plugins: [LevelSelector],
+                mediacontrol: { seekbar: '#014AFF', buttons: '#FFF' },
+                playback: { hlsjsConfig: { startPosition: -1 } },
+                mimeType: "application/x-mpegURL"
+            };
+
+            var player = new Clappr.Player(playerOptions);
+            player.attachTo(document.getElementById("player"));
+
+            player.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
+                if (screen.orientation?.lock) {
+                    screen.orientation.lock('landscape').catch(console.error);
+                }
             });
 
-            // Custom Refresh Button
-            playerInstance.addButton(
-                `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
-                    <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
-                </svg>`,
-                "Refresh Video",
-                function () {
-                    const currentFile = playerInstance.getPlaylistItem().file;
-                    playerInstance.stop().load({ file: currentFile }).play();
-                },
-                "refresh-button"
-            );
-          
-          	// Error handling
-            playerInstance.on('error', () => {
+            player.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
+                if (screen.orientation?.unlock) {
+                    screen.orientation.unlock();
+                }
+            });
+
+            player.on(Clappr.Events.PLAYER_ERROR, function() {
+                console.error('Error occurred. Retrying...');
                 setTimeout(() => {
-                    playerInstance.stop().load({ file: videoUrl }).play();
+                    player.load({ source: videoUrl });
+                    player.play();
                 }, 5000);
             });
 
         } else {
-            // Handle excluded domains untuk iframe
+            document.getElementById('videoIframe').classList.remove('hidden');
+            
             const excludedDomains = ['embedstreams.top', 'embedme.top', 'sindikasi.inews.id'];
             const link = document.createElement('a');
             link.href = videoUrl;
 
-            document.getElementById('videoIframe').classList.remove('hidden');
-            
             if (excludedDomains.includes(link.hostname)) {
                 document.getElementById('videoIframe').removeAttribute('sandbox');
             }
@@ -226,19 +205,8 @@
             document.getElementById('videoIframe').src = videoUrl;
         }
 
-        // Fullscreen orientation lock
-        function onFullscreenChange() {
-            if (document.fullscreenElement) {
-                screen.orientation?.lock('landscape').catch(console.error);
-            } else {
-                screen.orientation?.unlock();
-            }
-        }
-
-        // Event listeners
-        document.addEventListener('fullscreenchange', onFullscreenChange);
-        document.addEventListener('webkitfullscreenchange', onFullscreenChange);
         window.addEventListener('load', () => disableDevtool());
+      
     </script>
 </body>
 </html>
