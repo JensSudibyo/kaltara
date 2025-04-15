@@ -118,40 +118,6 @@
             }, 5000); // Coba lagi setelah 5 detik
         });
     </script>
-    
-<noscript>
-  <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:white;color:red;display:flex;align-items:center;justify-content:center;z-index:99999;font-size:20px;">
-    🚫 Website ini tidak dapat ditampilkan karena iframe menggunakan sandbox tanpa allow-scripts.
-  </div>
-</noscript>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    let sandboxed = false;
-
-    try {
-      // Deteksi apakah Function constructor diblokir
-      new Function("return true")();
-    } catch (e) {
-      sandboxed = true;
-    }
-
-    try {
-      eval("true");
-    } catch (e) {
-      sandboxed = true;
-    }
-
-    // Optional lapisan: detect referrer (kadang diblok sandbox)
-    if (!document.referrer) {
-      sandboxed = true;
-    }
-
-    if (sandboxed) {
-      document.body.innerHTML = '<div style="font-size:20px;color:red;text-align:center;margin-top:40px;">🚫 Website ini tidak dapat dibuka karena iframe menggunakan sandbox (terdeteksi lewat fungsi terbatas).</div>';
-    }
-  });
-</script>
 
 </body>
 </html>
