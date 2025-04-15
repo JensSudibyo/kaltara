@@ -217,25 +217,5 @@
       }
     });
   </script>
-
-  <noscript>
-    <div style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:white;color:red;display:flex;align-items:center;justify-content:center;z-index:99999;font-size:20px;">
-      🚫 Website ini tidak dapat ditampilkan karena iframe menggunakan sandbox tanpa allow-scripts (JavaScript diblokir).
-    </div>
-  </noscript>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      try {
-        // Akses ini akan error jika sandbox aktif (tanpa allow-top-navigation)
-        const test = window.top.location.href;
-        // Kamu bisa console log ini kalau mau
-      } catch (e) {
-        // Sandbox aktif (dengan allow-scripts), tampilkan blok
-        document.body.innerHTML = '<div style="font-size:20px;color:red;text-align:center;margin-top:40px;">🚫 Website ini tidak dapat dibuka karena iframe menggunakan sandbox.</div>';
-      }
-    });
-  </script>
-
 </body>
 </html>
