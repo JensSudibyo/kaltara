@@ -401,9 +401,9 @@
                 mediacontrol: { seekbar: '#014AFF', buttons: '#FFF' },
 		playback: {
 		  hlsjsConfig: {
-		    liveSyncDuration: 1,
-		    liveMaxLatencyDuration: 2,
-		    maxLiveSyncPlaybackRate: 1.5
+		    maxBufferSize: 0,       // Highly recommended setting
+		    maxBufferLength: 30,    // Highly recommended setting
+		    liveSyncDuration: 30    // Highly recommended setting
 		  }
 		},
                 mimeType: "application/x-mpegURL"
