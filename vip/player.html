@@ -398,7 +398,13 @@
                 poster: 'https://www.streamkaltaraid.online/images/poster1.png',
                 plugins: [LevelSelector],
                 mediacontrol: { seekbar: '#014AFF', buttons: '#FFF' },
-                playback: { hlsjsConfig: { startPosition: -1 } },
+		playback: {
+		  hlsjsConfig: {
+		    liveSyncDuration: 1,
+		    liveMaxLatencyDuration: 2,
+		    maxLiveSyncPlaybackRate: 1.5
+		  }
+		},
                 mimeType: "application/x-mpegURL"
             };
 
